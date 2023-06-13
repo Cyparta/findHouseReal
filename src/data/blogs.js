@@ -2,8 +2,8 @@ module.exports.blogs = [
   {
     id: { en: "1", ar: "1" },
     img: {
-      en: "/findHouse/assets/images/home/business2externction.jpg",
-      ar: "/findHouse/assets/images/home/business2externction.jpg",
+      en: "/findHouseReal/assets/images/home/business2externction.jpg",
+      ar: "/findHouseReal/assets/images/home/business2externction.jpg",
     },
     postMeta: { en: "Contracting", ar: "المقاولات" },
     title: {
@@ -11,8 +11,8 @@ module.exports.blogs = [
       ar: ` المقاولات`,
     },
     posterAvatar: {
-      en: "/findHouse/assets/images/property/pposter1.png",
-      ar: "/findHouse/assets/images/property/pposter1.png",
+      en: "/findHouseReal/assets/images/property/pposter1.png",
+      ar: "/findHouseReal/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },
@@ -75,8 +75,8 @@ module.exports.blogs = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouse/assets/images/home/building2.jpg",
-      ar: "/findHouse/assets/images/home/building2.jpg",
+      en: "/findHouseReal/assets/images/home/building2.jpg",
+      ar: "/findHouseReal/assets/images/home/building2.jpg",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {
@@ -84,8 +84,8 @@ module.exports.blogs = [
       ar: `العقارات`,
     },
     posterAvatar: {
-      en: "/findHouse/assets/images/property/pposter1.png",
-      ar: "/findHouse/assets/images/property/pposter1.png",
+      en: "/findHouseReal/assets/images/property/pposter1.png",
+      ar: "/findHouseReal/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },
@@ -187,8 +187,8 @@ Complete the deal.
   {
     id: { en: "3", ar: "3" },
     img: {
-      en: "/findHouse/assets/images/home/couchvillage7.jpg",
-      ar: "/findHouse/assets/images/home/couchvillage7.jpg",
+      en: "/findHouseReal/assets/images/home/couchvillage7.jpg",
+      ar: "/findHouseReal/assets/images/home/couchvillage7.jpg",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {
@@ -196,8 +196,8 @@ Complete the deal.
       ar: `نتميز بديكورات جديده`,
     },
     posterAvatar: {
-      en: "/findHouse/assets/images/property/pposter1.png",
-      ar: "/findHouse/assets/images/property/pposter1.png",
+      en: "/findHouseReal/assets/images/property/pposter1.png",
+      ar: "/findHouseReal/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },

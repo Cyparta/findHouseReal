@@ -13,7 +13,7 @@ const MobileMenu = () => {
             <Link href="/">
               <img
                 className="nav_logo_img img-fluid "
-                src="/findHouse/assets/images/logo/logo.png"
+                src="/findHouseReal/assets/images/logo/logo.png"
                 alt="header-logo2.png"
               />
             </Link>

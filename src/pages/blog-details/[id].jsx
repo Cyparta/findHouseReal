@@ -32,7 +32,7 @@ const BlogDetailsDynamic = () => {
     console.log(blogs.find((item) => item.id[lang] == id));
     let result = blogs.find((blog) => blog.id[lang] == id);
     setBlogItem(result);
-    console.log(blog);
+    console.log(blog, "blog");
   }, [id]);
   const translateuse = {
     share: {
@@ -70,7 +70,7 @@ const BlogDetailsDynamic = () => {
           <div className="container">
             <div className="row">
               <div className="col-xl-6">
-                <BreadCrumb2 />
+                <BreadCrumb2 title={blog?.title[lang]} />
               </div>
             </div>
             {/* End .row */}
@@ -87,7 +87,7 @@ const BlogDetailsDynamic = () => {
                         <li className="list-inline-item">
                           <a href="#">
                             <img
-                              src="/findHouse/assets/images/property/pposter1.png"
+                              src="/findHouseReal/assets/images/property/pposter1.png"
                               alt="pposter1.png"
                             />
                           </a>

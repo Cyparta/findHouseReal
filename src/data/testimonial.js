@@ -2,8 +2,8 @@ module.exports = [
   {
     id: { en: 3, ar: 3 },
     img: {
-      en: "/findHouse/assets/images/testimonial/3.jpg",
-      ar: "/findHouse/assets/images/testimonial/3.jpg",
+      en: "/findHouseReal/assets/images/testimonial/3.jpg",
+      ar: "/findHouseReal/assets/images/testimonial/3.jpg",
     },
     name: { en: "Augusta Silva", ar: "شخص معين" },
     designation: { en: "Sales Manager", ar: "مدير مبيعات" },
@@ -16,8 +16,8 @@ module.exports = [
   {
     id: { en: 2, ar: 2 },
     img: {
-      en: "/findHouse/assets/images/testimonial/2.jpg",
-      ar: "/findHouse/assets/images/testimonial/2.jpg",
+      en: "/findHouseReal/assets/images/testimonial/2.jpg",
+      ar: "/findHouseReal/assets/images/testimonial/2.jpg",
     },
     name: { en: "Augusta Silva", ar: "Augusta Silva" },
     designation: { en: "Sales Manager", ar: "Sales Manager" },
@@ -30,8 +30,8 @@ module.exports = [
   {
     id: { en: 4, ar: 4 },
     img: {
-      en: "/findHouse/assets/images/testimonial/4.png",
-      ar: "/findHouse/assets/images/testimonial/4.png",
+      en: "/findHouseReal/assets/images/testimonial/4.png",
+      ar: "/findHouseReal/assets/images/testimonial/4.png",
     },
     name: { en: "Augusta Silva", ar: "Augusta Silva" },
     designation: { en: "Sales Manager", ar: "Sales Manager" },

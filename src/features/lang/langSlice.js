@@ -28,8 +28,8 @@ const initialState = {
         ar: "قائمة",
       },
       grid1: {
-        en: "grid 1",
-        ar: "1 شبكة",
+        en: "Marketing",
+        ar: "تسويق",
       },
       grid2: {
         en: "grid2",

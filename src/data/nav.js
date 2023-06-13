@@ -1,7 +1,7 @@
 export const home = [
   {
     id: 1,
-    name: { en: "Home 1", ar: "الصفحة الرئيسية 1" },
+    name: { en: "Home", ar: "الصفحة الرئيسية" },
     routerPath: "/",
   },
   {
@@ -266,9 +266,21 @@ export const pages = [
     name: { en: "About Us", ar: "معلومات عنا" },
     routerPath: "/about-us",
   },
-  { id: 2, name: { en: "Gallery", ar: "الصور" }, routerPath: "/gallery" },
-  { id: 3, name: { en: "Faq", ar: "التعليمات" }, routerPath: "/faq" },
-  { id: 4, name: { en: "LogIn", ar: "تسجيل الدخول" }, routerPath: "/login" },
+  {
+    id: 2,
+    name: { en: "Construction", ar: "مقاولات" },
+    routerPath: "/gallery",
+  },
+  {
+    id: 3,
+    name: { en: "Decoration", ar: "ديكورات" },
+    routerPath: "/gallerydecoration",
+  },
+  {
+    id: 4,
+    name: { en: "Real Estate", ar: "عقارات" },
+    routerPath: "/galleryreal",
+  },
   { id: 5, name: { en: "compare", ar: "يقارن" }, routerPath: "/compare" },
   { id: 6, name: { en: "Membership", ar: "عضوية" }, routerPath: "/membership" },
 

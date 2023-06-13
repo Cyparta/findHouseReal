@@ -18,6 +18,7 @@ const MobileMenuContent = () => {
   const lang = useSelector((state) => state.lang.value.lang);
   const main = useSelector((state) => state.lang.value.pages);
   const route = useRouter();
+
   return (
     <ProSidebar>
       <SidebarHeader>
@@ -26,7 +27,7 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid "
-                src="/findHouse/assets/images/logo/logo.png"
+                src="/findHouseReal/assets/images/logo/logo.png"
                 alt="header-logo.png"
               />
             </a>
@@ -48,191 +49,120 @@ const MobileMenuContent = () => {
 
       <SidebarContent>
         <Menu>
-          <SubMenu
-            title={main.home[lang]}
-            className={
-              home.some((page) => page.routerPath === route.pathname)
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {home.map((val, i) => (
-              <MenuItem key={i} active={true}>
-                <Link href={val.routerPath}>
-                  <a
-                    className={
-                      val.routerPath === route.pathname
-                        ? "ui-active"
-                        : undefined
-                    }
-                  >
-                    {val.name[lang]}
-                  </a>
-                </Link>
-              </MenuItem>
-            ))}
-          </SubMenu>
+          <MenuItem active={true}>
+            <Link href={home[0].routerPath}>
+              <a
+                className={
+                  home[0].routerPath === route.pathname
+                    ? "ui-active"
+                    : undefined
+                }
+              >
+                {home[0].name[lang]}
+              </a>
+            </Link>
+          </MenuItem>
+
           {/* End Home Home */}
 
           {/* listing.title[lang] */}
-          <SubMenu
-            title={main.listing[lang]}
-            className={
-              listing.some((parent) => {
-                return parent.items.some(
-                  (page) => page.routerPath === route.pathname
-                );
-              })
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {listing.map((item) => (
-              <SubMenu
-                title={item.title[lang]}
-                className={
-                  item.items.some((page) => page.routerPath === route.pathname)
-                    ? "ui-active plus alt"
-                    : "plus alt"
-                }
-                key={item.id}
-              >
-                {item.items.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link href={val.routerPath}>
-                      <a
-                        className={
-                          route.pathname === val.routerPath
-                            ? "ui-active"
-                            : undefined
-                        }
-                      >
-                        {val.name[lang]}
-                      </a>
-                    </Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-            ))}
-          </SubMenu>
+
           {/* End Pages Listing */}
 
-          <SubMenu
-            title={property[0].title[lang]}
-            className={
-              property.some((parent) => {
-                return parent.items.some(
-                  (page) =>
-                    page.routerPath === route.pathname ||
-                    page.routerPath + "/[id]" === route.pathname
-                );
-              })
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {property.map((item) => (
-              <SubMenu
-                title={item.title[lang]}
+          {/* End Pages Property */}
+          <MenuItem>
+            <li className="dropitem">
+              <Link href="/listing-grid-v1">
+                <a href="#">
+                  <span className="title">{main.listing[lang]}</span>
+                </a>
+              </Link>
+            </li>
+          </MenuItem>
+          <MenuItem>
+            <li key={pages[1].id} className="dropitem">
+              <Link href={pages[1].routerPath}>
+                <a
+                  className={
+                    pages[1].pathname === pages[1].routerPath
+                      ? "ui-active  mx-2 text-capitalize"
+                      : undefined
+                  }
+                >
+                  {pages[1].name[lang]}
+                </a>
+              </Link>
+            </li>
+          </MenuItem>
+          <MenuItem>
+            <li key={pages[2].id} className="dropitem">
+              <Link href={pages[2].routerPath}>
+                <a
+                  className={
+                    pages[2].pathname === pages[2].routerPath
+                      ? "ui-active  mx-2 text-capitalize"
+                      : undefined
+                  }
+                >
+                  {pages[2].name[lang]}
+                </a>
+              </Link>
+            </li>
+          </MenuItem>
+          <MenuItem>
+            <li key={pages[3].id} className="dropitem">
+              <Link href={pages[3].routerPath}>
+                <a
+                  className={
+                    pages[3].pathname === pages[3].routerPath
+                      ? "ui-active  mx-2 text-capitalize"
+                      : undefined
+                  }
+                >
+                  {pages[3].name[lang]}
+                </a>
+              </Link>
+            </li>
+          </MenuItem>
+          {/* End pages Blog */}
+
+          <MenuItem>
+            <li className="dropitem">
+              <Link
+                href="/blog-list-3"
                 className={
-                  item.items.some(
+                  blog.some(
                     (page) =>
                       page.routerPath === route.pathname ||
                       page.routerPath + "/[id]" === route.pathname
                   )
-                    ? "ui-active plus alt"
-                    : "plus alt"
+                    ? "ui-active  mx-2 text-capitalize"
+                    : undefined
                 }
-                key={item.id}
               >
-                {item.items.map((val, i) => (
-                  <MenuItem key={i}>
-                    <Link href={val.routerPath}>
-                      <a
-                        className={
-                          route.pathname === val.routerPath ||
-                          val.routerPath + "/[id]" === route.pathname
-                            ? "ui-active"
-                            : undefined
-                        }
-                      >
-                        {val.name[lang]}
-                      </a>
-                    </Link>
-                  </MenuItem>
-                ))}
-              </SubMenu>
-            ))}
-          </SubMenu>
-          {/* End Pages Property */}
+                <span className="title text-capitalize">
+                  {main.blog1[lang]}
+                </span>
+                {/* <span className="arrow"></span> */}
+              </Link>
+            </li>
+          </MenuItem>
 
-          <SubMenu
-            title={main.blog[lang]}
-            className={
-              blog.some(
-                (page) =>
-                  page.routerPath === route.pathname ||
-                  page.routerPath + "/[id]" === route.pathname
-              )
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {blog.map((val, i) => (
-              <MenuItem key={i}>
-                <Link href={val.routerPath}>
-                  <a
-                    className={
-                      route.pathname === val.routerPath ||
-                      val.routerPath + "/[id]" === route.pathname
-                        ? "ui-active"
-                        : undefined
-                    }
-                  >
-                    {val.name[lang]}
-                  </a>
-                </Link>
-              </MenuItem>
-            ))}
-          </SubMenu>
-          {/* End pages Blog */}
-
-          <SubMenu
-            title={main.pagesHead[lang]}
-            className={
-              pages.some((page) => page.routerPath === route.pathname)
-                ? "parent-menu-active"
-                : undefined
-            }
-          >
-            {pages.map((val, i) => (
-              <MenuItem key={i}>
-                <Link href={val.routerPath}>
-                  <a
-                    className={
-                      route.pathname === val.routerPath
-                        ? "ui-active"
-                        : undefined
-                    }
-                  >
-                    {val.name[lang]}
-                  </a>
-                </Link>
-              </MenuItem>
-            ))}
-          </SubMenu>
           {/* End pages Pages */}
-
           <MenuItem>
-            <Link href="/contact">
-              <a
-                className={
-                  route.pathname === "/contact" ? "ui-active" : undefined
-                }
-              >
-                {lang === "ar" ? "اتصل" : "contact"}
-              </a>
-            </Link>
+            <ul>
+              <li className="last">
+                <Link href="/contact">
+                  <a
+                    className={
+                      route.pathname === "/contact" ? "ui-active" : undefined
+                    }
+                  >
+                    {main.contact[lang]}
+                  </a>
+                </Link>
+              </li>
+            </ul>
           </MenuItem>
 
           <MenuItem>

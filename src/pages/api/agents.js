@@ -2,7 +2,7 @@ export default function hander(req, res) {
   res.status(200).json([
     {
       id: 1,
-      img: "/findHouse/assets/images/team/5.jpg",
+      img: "/findHouseReal/assets/images/team/5.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -28,7 +28,7 @@ export default function hander(req, res) {
     },
     {
       id: 2,
-      img: "/findHouse/assets/images/team/6.jpg",
+      img: "/findHouseReal/assets/images/team/6.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -54,7 +54,7 @@ export default function hander(req, res) {
     },
     {
       id: 3,
-      img: "/findHouse/assets/images/team/7.jpg",
+      img: "/findHouseReal/assets/images/team/7.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -80,7 +80,7 @@ export default function hander(req, res) {
     },
     {
       id: 4,
-      img: "/findHouse/assets/images/team/8.jpg",
+      img: "/findHouseReal/assets/images/team/8.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -106,7 +106,7 @@ export default function hander(req, res) {
     },
     {
       id: 5,
-      img: "/findHouse/assets/images/team/9.jpg",
+      img: "/findHouseReal/assets/images/team/9.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -132,7 +132,7 @@ export default function hander(req, res) {
     },
     {
       id: 6,
-      img: "/findHouse/assets/images/team/10.jpg",
+      img: "/findHouseReal/assets/images/team/10.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -158,7 +158,7 @@ export default function hander(req, res) {
     },
     {
       id: 7,
-      img: "findHouse/assets/images/team/7.jpg",
+      img: "findHouseReal/assets/images/team/7.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -184,7 +184,7 @@ export default function hander(req, res) {
     },
     {
       id: 8,
-      img: "findHouse/assets/images/team/11.jpg",
+      img: "findHouseReal/assets/images/team/11.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -210,7 +210,7 @@ export default function hander(req, res) {
     },
     {
       id: 9,
-      img: "/findHouse/assets/images/team/12.jpg",
+      img: "/findHouseReal/assets/images/team/12.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -236,7 +236,7 @@ export default function hander(req, res) {
     },
     {
       id: 10,
-      img: "/findHouse/assets/images/team/13.jpg",
+      img: "/findHouseReal/assets/images/team/13.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -262,7 +262,7 @@ export default function hander(req, res) {
     },
     {
       id: 14,
-      img: "/findHouse/assets/images/team/14.jpg",
+      img: "/findHouseReal/assets/images/team/14.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -288,7 +288,7 @@ export default function hander(req, res) {
     },
     {
       id: 15,
-      img: "/findHouse/assets/images/team/15.jpg",
+      img: "/findHouseReal/assets/images/team/15.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },
@@ -314,7 +314,7 @@ export default function hander(req, res) {
     },
     {
       id: 16,
-      img: "/findHouse/assets/images/team/16.jpg",
+      img: "/findHouseReal/assets/images/team/16.jpg",
       socialList: [
         { icon: "fa-facebook", liveLink: "https://www.facebook.com/" },
         { icon: "fa-twitter", liveLink: "https://www.twitter.com/" },

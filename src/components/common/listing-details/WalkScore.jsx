@@ -9,7 +9,7 @@ const WalkScore = () => {
         {main.heading[lang]}{" "}
         <span className="float-end">
           <img
-            src="/findHouse/assets/images/resource/wscore.png"
+            src="/findHouseReal/assets/images/resource/wscore.png"
             alt="wscore.png"
           />
         </span>
