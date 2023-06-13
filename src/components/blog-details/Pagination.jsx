@@ -21,15 +21,13 @@ const Pagination = () => {
     },
   };
   return (
-    <div className="row">
+    <div className="row" dir="ltr">
       <div className="col-sm-6 col-lg-6">
         <div className="pag_prev">
           <a href="#">
-            <span
-              className={lang === "ar" ? "flaticon-next" : "flaticon-back"}
-            ></span>
+            <span className={"flaticon-back"}></span>
           </a>
-          <div className={lang === "ar" ? "detls ar" : "detls"}>
+          <div className={"detls"}>
             <h5>{translatepost.previouspost[lang]}</h5>
             <p>{translatepost.housemarkets[lang]}</p>
           </div>
@@ -40,9 +38,7 @@ const Pagination = () => {
       <div className="col-sm-6 col-lg-6">
         <div className="pag_next text-right" dir="rtl">
           <a href="#">
-            <span
-              className={lang === "ar" ? "flaticon-back" : "flaticon-next"}
-            ></span>
+            <span className={"flaticon-next"}></span>
           </a>
           <div className={lang === "ar" ? "ar detls" : "detls"}>
             <h5>{translatepost.nextpost[lang]}</h5>
