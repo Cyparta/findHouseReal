@@ -23,7 +23,11 @@ const Header = () => {
         navbar ? "stricky-fixed " : ""
       }`}
     >
-      <div className="container-fluid p0">
+      <div
+        className="container-fluid p0  d-flex 
+    justify-content-center
+    align-items-center"
+      >
         {/* <!-- Menu Toggle btn--> */}
         <Link href="/">
           <a className="navbar_brand float-start dn-smd">
@@ -37,7 +41,6 @@ const Header = () => {
               src="/findHouseReal/assets/images/logo/logo.png"
               alt="header-logo2.png"
             />
-        
           </a>
         </Link>
         {/* site logo brand */}

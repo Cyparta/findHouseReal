@@ -1,4 +1,4 @@
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .main-menu {
     display: block;
   }
@@ -7,7 +7,7 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1150px) {
   .mobile-menu {
     display: block;
     position: relative;

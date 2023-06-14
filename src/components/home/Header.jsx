@@ -25,7 +25,11 @@ const Header = () => {
         navbar ? "stricky-fixed " : ""
       }`}
     >
-      <div className="container-fluid p0">
+      <div
+        className="container-fluid p0 d-flex 
+    justify-content-center
+    align-items-center"
+      >
         {/* <!-- Ace Responsive Menu --> */}
 
         <Link href="/">

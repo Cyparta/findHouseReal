@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useSelector } from "react-redux";
-
+import copywrite from "../../../../public/assets/images/cyparta.png";
+import Image from "next/image";
 const CopyrightFooter = () => {
   let lang = useSelector((state) => state.lang.value.lang);
   const menuItems = [
@@ -17,8 +18,8 @@ const CopyrightFooter = () => {
   ];
   const translatecopyright = {
     firstp: {
-      en: "© 2021 Dar Farah Real Estate Development.",
-      ar: "© 2021 دار فرح للتطوير العقاري.",
+      en: "cyparta ",
+      ar: "cyparta ",
     },
     secondp: { en: "All rights reserved.", ar: "جميع الحقوق محفوظة." },
   };
@@ -27,9 +28,14 @@ const CopyrightFooter = () => {
       {/* End .col */}
 
       <div className="col-lg-12 col-xl-12">
-        <div className="copyright-widget text-center">
-          <p>
-            &copy; {new Date().getFullYear()} by{" "}
+        <div
+          className="copyright-widget text-center d-flex
+          justify-content-evenly
+    align-items-center"
+        >
+          <Image src={copywrite} alt="" />
+          <p className="m-0">
+            &copy; {new Date().getFullYear()}{" "}
             <a
               href="https://themeforest.net/user/ib-themes"
               target="_blank"

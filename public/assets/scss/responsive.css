@@ -149,7 +149,7 @@
   }
 
   header.header-nav.menu_style_home_one a.navbar_brand {
-    margin-top: 21px;
+    /* margin-top: 21px; */
   }
   header.header-nav.menu_style_home_one .ace-responsive-menu > li > a {
     padding: 37px 20px 27px 5px;
@@ -254,7 +254,7 @@
     padding: 30px;
   }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1150px) {
   .menu_style_home_one {
     display: none;
   }
@@ -1113,7 +1113,6 @@
     top: -75px;
   }
   .inner_page_breadcrumb {
-   
   }
   .checkout_form .checkout_coupon form input,
   .checkout_form .checkout_coupon form button.btn2 {
