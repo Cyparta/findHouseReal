@@ -1,4 +1,4 @@
-@media (min-width: 993px) {
+@media (min-width: 1250px) {
   .main-menu {
     display: block;
   }
@@ -7,12 +7,15 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1250px) {
   .mobile-menu {
     display: block;
     position: relative;
     z-index: 99;
     box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 9%);
+    position: fixed;
+    width: 100%;
+    top: 0;
   }
   .header,
   .footer {
@@ -717,7 +720,7 @@ header.stylehome1.home4 a {
 }
 
 /* Small devices (min-width: 576px) (max-width: 767.98px) // (landscape phones, less than 992px) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1250px) {
   .header.stylehome1.dashbord_pages:before {
     background-image: -moz-linear-gradient(
       0deg,

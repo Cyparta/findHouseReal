@@ -24,7 +24,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- Listing Single Property --> */}
-        <div className="home10-mainslider mt85 md-mt0">
+        <div className="home10-mainslider mt85 ">
           <div className="container-fluid p0">
             <div className="row">
               <div className="col-lg-12">

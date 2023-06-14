@@ -14695,6 +14695,7 @@ legend span {
   margin: 0 auto 30px;
   padding: 17px 15px;
   position: relative;
+  width: 100%;
 }
 
 .grid_list_search_result .left_area p {

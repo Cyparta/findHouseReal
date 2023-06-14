@@ -30,7 +30,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- 6th Home Design --> */}
-        <section className="listing-home-bg parallax pt30-520 mt85 md-mt0">
+        <section className="listing-home-bg parallax pt30-520 mt85">
           <div className="container">
             <div className="row posr">
               <div className="col-lg-12">
@@ -51,7 +51,7 @@ const index = () => {
         </section>
 
         {/* <!-- Listing Grid View --> */}
-        <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 ">
+        <section className="our-listing bgc-f7 pb30-991 mt85 ">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">

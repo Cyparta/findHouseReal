@@ -29,7 +29,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- Listing Grid View --> */}
-        <section className="our-listing bgc-f7 pb30-991 mt85 md-mt0 ">
+        <section className="our-listing bgc-f7 pb30-991 mt85 ">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">

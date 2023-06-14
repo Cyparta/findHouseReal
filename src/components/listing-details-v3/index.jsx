@@ -23,7 +23,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- Listing Single Property --> */}
-        <section className="listing-title-area mt85 pb0 md-mt0">
+        <section className="listing-title-area mt85 pb0 ">
           <div className="container pb50">
             <div className="row">
               <div className="col-lg-7 col-xl-8">

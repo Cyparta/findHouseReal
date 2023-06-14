@@ -35,7 +35,7 @@ const ListingDynamicDetailsV2 = () => {
       <PopupSignInUp />
 
       {/* <!-- Listing Single Property --> */}
-      <section className="single_page_listing_style p0 mt85 md-mt0">
+      <section className="single_page_listing_style p0 mt85">
         <div className="container-fluid p0">
           <Gallery>
             <div className="row g-0" key={property?.id}>

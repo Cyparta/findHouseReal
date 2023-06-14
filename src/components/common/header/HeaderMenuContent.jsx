@@ -234,24 +234,52 @@ const HeaderMenuContent = ({ float = "" }) => {
   return (
     <ul
       id="respMenu"
-      className="ace-responsive-menu text-end d-lg-block d-none"
+      className="ace-responsive-menu text-end"
       data-menu-style="horizontal"
     >
       {/* <!-- Level Two--> */}
-      <Link href={home[0].routerPath}>
-        <a
-          className={
-            route.pathname === home[0].routerPath ? "ui-active" : undefined
-          }
-        >
-          <span>{home[0].name}</span>
-        </a>
-      </Link>
-
+      <li>
+        <Link href={home[0].routerPath}>
+          <a
+            className={
+              route.pathname === home[0].routerPath ? "ui-active" : undefined
+            }
+          >
+            <span>{home[0].name}</span>
+          </a>
+        </Link>
+      </li>
+      <li className="dropitem">
+        <Link href="/about-us">
+          <a
+            // href="#"
+            className={route.pathname === "/about-us" ? "ui-active" : undefined}
+          >
+            <span className="title">{main.aboutUs[lang]}</span>
+          </a>
+        </Link>
+      </li>
+      <li className="dropitem">
+        <Link href="/blog-list-1">
+          <a
+            // href="#"
+            className={
+              route.pathname === "/blog-list-1" ? "ui-active" : undefined
+            }
+          >
+            <span className="title">{main.blog1[lang]}</span>
+          </a>
+        </Link>
+      </li>
       {/* End .dropitem */}
       <li className="dropitem">
         <Link href="/listing-grid-v1">
-          <a href="#">
+          <a
+            // href="#"
+            className={
+              route.pathname === "/listing-grid-v1" ? "ui-active" : undefined
+            }
+          >
             <span className="title">{main.listing[lang]}</span>
           </a>
         </Link>
@@ -264,39 +292,40 @@ const HeaderMenuContent = ({ float = "" }) => {
       {/* End .dropitem */}
       <li className="dropitem">
         <Link href="/gallerydecoration">
-          <a href="#">
+          <a
+            // href="#"
+            className={
+              route.pathname === "/gallerydecoration" ? "ui-active" : undefined
+            }
+          >
             <span className="title">{main.gallerydecoration[lang]}</span>
           </a>
         </Link>
       </li>
       <li className="dropitem">
         <Link href="/galleryreal">
-          <a href="#">
+          <a
+            // href="#"
+            className={
+              route.pathname === "/galleryreal" ? "ui-active" : undefined
+            }
+          >
             <span className="title">{main.galleryreal[lang]}</span>
           </a>
         </Link>
       </li>
-      <li className="dropitem">
-        <Link href="/about-us">
-          <a href="#">
-            <span className="title">{main.aboutUs[lang]}</span>
-          </a>
-        </Link>
-      </li>
+
       <li className="dropitem">
         <Link href="/gallery">
-          <a href="#">
+          <a
+            // href="#"
+            className={route.pathname === "/gallery" ? "ui-active" : undefined}
+          >
             <span className="title">{main.gallery[lang]}</span>
           </a>
         </Link>
       </li>
-      <li className="dropitem">
-        <Link href="/blog-list-1">
-          <a href="#">
-            <span className="title">{main.blog1[lang]}</span>
-          </a>
-        </Link>
-      </li>
+
       {/* End .dropitem */}
 
       <li className="last">

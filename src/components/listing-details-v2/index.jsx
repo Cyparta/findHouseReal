@@ -23,7 +23,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- Listing Single Property --> */}
-        <section className="single_page_listing_style p0 mt85 md-mt0">
+        <section className="single_page_listing_style p0 mt85 ">
           <div className="container-fluid p0">
             <ListingGallery2 />
           </div>

@@ -9,6 +9,7 @@ import GalleryBox from "./GalleryBox";
 
 const index = ({ nameofgallery }) => {
   const lang = useSelector((state) => state.lang.value.lang);
+  console.log(nameofgallery);
   return (
     <>
       <div className={lang}>
@@ -22,7 +23,7 @@ const index = ({ nameofgallery }) => {
         <PopupSignInUp />
 
         {/* <!-- Inner Page Breadcrumb --> */}
-        <BreadCrumbBanner />
+        <BreadCrumbBanner title={nameofgallery[0]?.type[lang]} />
 
         {/* <!-- About Text Content --> */}
         <section className="about-section pb30">

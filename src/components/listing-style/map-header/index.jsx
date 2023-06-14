@@ -29,7 +29,7 @@ const index = () => {
         <PopupSignInUp />
 
         {/* <!-- Map --> */}
-        <section className="home-two p0 mt85 md-mt0">
+        <section className="home-two p0 mt85 ">
           <div className="home_two_map">
             <div className="gmap_canvas pe-none">
               <iframe

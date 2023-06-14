@@ -25,7 +25,7 @@ const index = () => {
         {/* <!-- Listing Grid View --> */}
         <section
           id="feature-property"
-          className="our-listing our-listing_map2 bgc-f7 pt0 pb0  mt85 md-mt0"
+          className="our-listing our-listing_map2 bgc-f7 pt0 pb0  mt85 "
         >
           <div className="container-fluid">
             <div className="row check-desktop">

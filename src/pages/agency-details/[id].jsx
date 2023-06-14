@@ -34,7 +34,7 @@ const AgencyDetailsDynamic = () => {
       <PopupSignInUp />
 
       {/* <!-- Agent Single Grid View --> */}
-      <section className="our-agent-single bgc-f7 pb30-991 mt85 md-mt0">
+      <section className="our-agent-single bgc-f7 pb30-991 mt85 ">
         <div className="container">
           <div className="row">
             <div className="col-md-12 col-lg-8">

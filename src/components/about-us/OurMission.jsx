@@ -57,7 +57,7 @@ const OurMission = () => {
           {/* End .ab_counting */}
         </div>
       </div>
-      <div className="col-lg-6 col-xl-6 col-md-6">
+      <div className="col-lg-6 col-xl-6">
         <iframe
           width="560"
           height="315"
