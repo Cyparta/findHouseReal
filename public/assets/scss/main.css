@@ -6241,11 +6241,18 @@ form.home5_advanced_search_form
   margin: 10px 9px 0 10px;
   position: relative;
 }
-
+.for_blog.feat_property .thumb {
+  background: #1d293e;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 9px 0 10px;
+  position: relative;
+  height: 450px;
+}
 .feat_property .thumb img {
   opacity: 0.6;
   object-fit: fill;
-  height: 285px;
+  height: 100%;
 }
 
 .feat_property .thumb .blog_tag {
@@ -6724,7 +6731,7 @@ form.home5_advanced_search_form
 
 .feat_property.home7.style4 .thumb {
   margin: 10px;
-  max-height: 215px;
+  /* max-height: 450px; */
 }
 
 .feat_property.home7.style4 .thumb .thmb_cntnt.style2 {
@@ -14728,13 +14735,7 @@ legend span {
 }
 
 .grid_list_search_result .right_area ul li:first-child:before {
-  background-color: rgb(232, 238, 242);
-  content: "";
-  height: 35px;
-  position: absolute;
-  right: -22px;
-  top: -5px;
-  width: 1px;
+  display: none;
 }
 
 .grid_list_search_result
@@ -19706,7 +19707,7 @@ canvas {
 #open.flaticon-close:before,
 #open2.flaticon-filter-results-button:before,
 #open2.flaticon-close:before {
-  background-color: #f53c41;
+  background-color: var(--color-primary);
   left: 0;
   position: absolute;
   width: 48px;

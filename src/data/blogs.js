@@ -2,8 +2,8 @@ module.exports.blogs = [
   {
     id: { en: "1", ar: "1" },
     img: {
-      en: "/findHouseReal/assets/images/home/business2externction.jpg",
-      ar: "/findHouseReal/assets/images/home/business2externction.jpg",
+      en: "/findHouseReal/assets/images/home/450_1.png",
+      ar: "/findHouseReal/assets/images/home/450_1.png",
     },
     postMeta: { en: "Contracting", ar: "المقاولات" },
     title: {
@@ -75,8 +75,8 @@ module.exports.blogs = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouseReal/assets/images/home/building2.jpg",
-      ar: "/findHouseReal/assets/images/home/building2.jpg",
+      en: "/findHouseReal/assets/images/home/450_2.png",
+      ar: "/findHouseReal/assets/images/home/450_2.png",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {
@@ -187,8 +187,8 @@ Complete the deal.
   {
     id: { en: "3", ar: "3" },
     img: {
-      en: "/findHouseReal/assets/images/home/couchvillage7.jpg",
-      ar: "/findHouseReal/assets/images/home/couchvillage7.jpg",
+      en: "/findHouseReal/assets/images/home/450_3.png",
+      ar: "/findHouseReal/assets/images/home/450_3.png",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {

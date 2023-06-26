@@ -54,7 +54,7 @@ const FilterTopBar = ({data}) => {
       {/* End .col */}
 
       <div className="col-sm-12 col-md-8 col-lg-8 col-xl-7">
-        <div className="right_area text-end tac-xsd">
+        <div className="right_area  tac-xsd">
           <ul>
             <li className="list-inline-item">
               <span className="stts">{main.statusText[lang]}</span>
