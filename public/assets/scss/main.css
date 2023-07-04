@@ -6240,19 +6240,16 @@ form.home5_advanced_search_form
   overflow: hidden;
   margin: 10px 9px 0 10px;
   position: relative;
+  height: 320px;
 }
-.for_blog.feat_property .thumb {
-  background: #1d293e;
-  border-radius: 8px;
-  overflow: hidden;
-  margin: 10px 9px 0 10px;
-  position: relative;
-  height: 450px;
-}
+
+ 
+
 .feat_property .thumb img {
   opacity: 0.6;
   object-fit: fill;
   height: 100%;
+  position: absolute;
 }
 
 .feat_property .thumb .blog_tag {
@@ -6731,7 +6728,7 @@ form.home5_advanced_search_form
 
 .feat_property.home7.style4 .thumb {
   margin: 10px;
-  /* max-height: 450px; */
+  min-height: 300px;
 }
 
 .feat_property.home7.style4 .thumb .thmb_cntnt.style2 {

@@ -149,3 +149,23 @@
         margin-top: 20px;
     }
 }
+
+.styletothumb{
+    background: #1d293e;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 9px 0 10px;
+  position: relative;
+}
+.for_blog.feat_property .thumb{
+   @extend .styletothumb;
+    height: 450px;
+  }
+  .for_blog.feat_property .thumb {
+    @extend .styletothumb;
+    height: 320px;
+  }
+  .blog_post_container .for_blog.feat_property .thumb{
+    @extend .styletothumb;
+    height: 450px;
+  }

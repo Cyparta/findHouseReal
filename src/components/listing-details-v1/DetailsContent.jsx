@@ -17,7 +17,6 @@ import WhatsNearby from "../common/listing-details/WhatsNearby";
 const DetailsContent = ({ property }) => {
   const lang = useSelector((state) => state.lang.value.lang);
   const main = useSelector((state) => state.lang.value.listingStyle);
-  console.log(property);
   return (
     <>
       <div className="listing_single_description">
@@ -108,9 +107,9 @@ const DetailsContent = ({ property }) => {
         <div className="mbp_pagination_comments mt30">
           <div className="total_review">
             <h4>{main.comments.heading[lang]}</h4>
-            <ul className="review_star_list mb0 pl10">
+            {/* <ul className="review_star_list mb0 pl10">
               <Ratings />
-            </ul>
+            </ul> */}
             <a className="tr_outoff pl10" href="#">
               ( 4.5 )
             </a>
@@ -136,11 +135,11 @@ const DetailsContent = ({ property }) => {
                 <span className="sspd_review">
                   <ul>
                     <Ratings />
-                  </ul>
+                    </ul>
                 </span>
               </li>
               <li className="list-inline-item pr15">
-                <p>{main.comments.rating[lang]}</p>
+                <span>{main.comments.rating[lang]}</span>
               </li>
             </ul>
             <ReviewBox />

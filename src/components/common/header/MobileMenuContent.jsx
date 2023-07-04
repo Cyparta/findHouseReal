@@ -71,15 +71,17 @@ const MobileMenuContent = () => {
 
           {/* End Pages Property */}
           <MenuItem>
+          <ul>
             <li className="dropitem">
               <Link href="/listing-grid-v1">
                 <a href="#">
                   <span className="title">{main.listing[lang]}</span>
                 </a>
               </Link>
-            </li>
+            </li></ul>
           </MenuItem>
           <MenuItem>
+          <ul>
             <li key={pages[1].id} className="dropitem">
               <Link href={pages[1].routerPath}>
                 <a
@@ -92,9 +94,10 @@ const MobileMenuContent = () => {
                   {pages[1].name[lang]}
                 </a>
               </Link>
-            </li>
+            </li></ul>
           </MenuItem>
           <MenuItem>
+          <ul>
             <li key={pages[2].id} className="dropitem">
               <Link href={pages[2].routerPath}>
                 <a
@@ -107,9 +110,10 @@ const MobileMenuContent = () => {
                   {pages[2].name[lang]}
                 </a>
               </Link>
-            </li>
+            </li></ul>
           </MenuItem>
           <MenuItem>
+          <ul>
             <li key={pages[3].id} className="dropitem">
               <Link href={pages[3].routerPath}>
                 <a
@@ -122,11 +126,12 @@ const MobileMenuContent = () => {
                   {pages[3].name[lang]}
                 </a>
               </Link>
-            </li>
+            </li></ul>
           </MenuItem>
           {/* End pages Blog */}
 
           <MenuItem>
+          <ul>
             <li className="dropitem">
               <Link
                 href="/blog-list-3"
@@ -145,7 +150,7 @@ const MobileMenuContent = () => {
                 </span>
                 {/* <span className="arrow"></span> */}
               </Link>
-            </li>
+            </li></ul>
           </MenuItem>
 
           {/* End pages Pages */}

@@ -11,6 +11,7 @@ import { gallerys } from "../../data/gallery";
 import DetailsContent from "../../components/listing-details-v1/DetailsContent";
 import Sidebar from "../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
+import dynamic from "next/dynamic";
 
 const ListingDynamicDetailsV1 = () => {
   const router = useRouter();
@@ -19,13 +20,13 @@ const ListingDynamicDetailsV1 = () => {
   let [property, setProperty] = useState();
 
   useEffect(() => {
-    setProperty(gallerys.find((val) => val.id[lang] == id));
-    console.log(property);
+    setProperty(gallerys?.find((val) => val.id[lang] == id));
   }, [id]);
 
   return (
     <>
       <div className={lang}>
+        
         {/* <!-- Main Header Nav --> */}
         <Header />
 
@@ -86,55 +87,27 @@ const ListingDynamicDetailsV1 = () => {
                     </div>
                   </div>
                 </div>
-                {/* End .col-sm-7 .col-lg-8 */}
-
-                {/* <div className="col-sm-5 col-lg-4">
-                  <div className="row">
-                    {property?.imgList?.map((val, i) => (
-                      <div className="col-6" key={i}>
-                        <div className="spls_style_two img-gallery-box mb24">
-                          <Item
-                            original={val}
-                            thumbnail={val}
-                            width={752}
-                            height={450}
-                          >
-                            {({ ref, open }) => (
-                              <div role="button" ref={ref} onClick={open}>
-                                {/* <img
-                                className="img-fluid w100"
-                                src={val}
-                                alt="2.jpg"
-                              /> */}
-                {/* </div> */}
-                {/* )} */}
-                {/* </Item> */}
-                {/* </div> */}
-                {/* </div> */}
-                {/* ))} */}
-                {/* </div> */}
-                {/* </div>  */}
-                {/* End  col-sm-5 col-lg-4 */}
+               
                 <div className="spss style2 mt20 text-end tal-400">
                   <ul className="mb0">
                     <li className="list-inline-item">
                       <a href="#">
-                        <span className="flaticon-transfer-1"></span>
+                        <i className="flaticon-transfer-1"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
                       <a href="#">
-                        <span className="flaticon-heart"></span>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
                       <a href="#">
-                        <span className="flaticon-share"></span>
+                        <i className="flaticon-share"></i>
                       </a>
                     </li>
                     <li className="list-inline-item">
                       <a href="#">
-                        <span className="flaticon-printer"></span>
+                        <i className="flaticon-printer"></i>
                       </a>
                     </li>
                   </ul>
@@ -183,4 +156,5 @@ const ListingDynamicDetailsV1 = () => {
   );
 };
 
-export default ListingDynamicDetailsV1;
+
+export default dynamic(() => Promise.resolve(ListingDynamicDetailsV1), { ssr: false });
