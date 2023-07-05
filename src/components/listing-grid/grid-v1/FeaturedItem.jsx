@@ -312,7 +312,7 @@ const FeaturedItem = () => {
                         </li>
                       </ul>
 
-                      <Link href={`/listing-details-v1/${item.id[lang]}`}>
+                      <Link href={`/listing-details-v1/[id]`} as={`/listing-details-v1/${item.id["en"]}`}>
                         <a className="fp_price">
                           ${item.price[lang]}
                           <small>/mo</small>
@@ -324,7 +324,7 @@ const FeaturedItem = () => {
                     <div className="tc_content">
                       {/* <p className="text-thm">{item.type[lang]}</p> */}
                       <h4>
-                        <Link href={`/listing-details-v1/${item.id[lang]}`}>
+                         <Link href={`/listing-details-v1/[id]`} as={`/listing-details-v1/${item.id["en"]}`}>
                           <a>{item.title[lang]}</a>
                         </Link>
                       </h4>
