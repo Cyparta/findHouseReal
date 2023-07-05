@@ -13,16 +13,17 @@ import Sidebar from "../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 
-const ListingDynamicDetailsV1 = () => {
+const ListingDynamicDetailsV1 = ({data}) => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
-  const id = router.query.id;
+  
+  const {id} = router.query;
   let [property, setProperty] = useState();
 
   useEffect(() => {
     setProperty(gallerys?.find((val) => val.id[lang] == id));
   }, [id]);
-
+  console.log(data)
   return (
     <>
       <div className={lang}>
@@ -158,3 +159,15 @@ const ListingDynamicDetailsV1 = () => {
 
 
 export default dynamic(() => Promise.resolve(ListingDynamicDetailsV1), { ssr: false });
+
+// export async function getStaticPaths() {
+//   return {
+//     paths: [
+//       // String variant:
+//       '/listing-details-v1/0',
+//       // Object variant:
+//       { params: { id: '1' } },
+//     ],
+//     fallback: true,
+//   }
+// }
