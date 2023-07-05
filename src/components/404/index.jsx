@@ -5,9 +5,17 @@ import Header from "../common/header/DefaultHeader";
 import MobileMenu from "../common/header/MobileMenu";
 import PopupSignInUp from "../common/PopupSignInUp";
 import ErrorPageContent from "./ErrorPageContent";
+import { useEffect } from "react";
 
 const index = () => {
   const lang = useSelector(state => state.lang.value.lang)
+  let pathSegmentsToKeep=0
+  let l=window.location
+  useEffect(()=>{
+    console.log(l)
+    l.replace(l.protocol+'//'+l.hostname+(l.port?":"+l.port:'')+l.pathname.split('/').slice(0,1+pathSegmentsToKeep).join('/')+'/?/'+l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join('/').replace(/&/g,'~and~')+(l.search?'&'+l.search.slice(1).replace(/&/g,'~and~'):"")+l.hash)
+
+  },[l])
   return (
     <>
       <div className={lang}>
