@@ -2,16 +2,16 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
-import Footer from "../../components/common/footer/Footer";
-import Header from "../../components/common/header/DefaultHeader";
-import MobileMenu from "../../components/common/header/MobileMenu";
-import PopupSignInUp from "../../components/common/PopupSignInUp";
-import { gallerys } from "../../data/gallery";
-import DetailsContent from "../../components/listing-details-v1/DetailsContent";
-import Sidebar from "../../components/listing-details-v1/Sidebar";
+import Footer from "../../../components/common/footer/Footer";
+import Header from "../../../components/common/header/DefaultHeader";
+import MobileMenu from "../../../components/common/header/MobileMenu";
+import PopupSignInUp from "../../../components/common/PopupSignInUp";
+import { gallerys } from "../../../data/gallery";
+import DetailsContent from "../../../components/listing-details-v1/DetailsContent";
+import Sidebar from "../../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
+import CopyrightFooter from "../../../components/common/footer/CopyrightFooter";
 
 const ListingDynamicDetailsV1 = ({data}) => {
   const router = useRouter();
@@ -159,15 +159,3 @@ const ListingDynamicDetailsV1 = ({data}) => {
 
 
 export default dynamic(() => Promise.resolve(ListingDynamicDetailsV1), { ssr: false });
-
-// export async function getStaticPaths() {
-//   return {
-//     paths: [
-//       // String variant:
-//       '/listing-details-v1/0',
-//       // Object variant:
-//       { params: { id: '1' } },
-//     ],
-//     fallback: true,
-//   }
-// }
