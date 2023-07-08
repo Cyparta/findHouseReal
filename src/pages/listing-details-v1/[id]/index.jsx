@@ -13,21 +13,22 @@ import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../../components/common/footer/CopyrightFooter";
 
-const ListingDynamicDetailsV1 = ({data}) => {
+const Page = () => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
   const {id} = router.query;
+  console.log(router,params)
   let [property, setProperty] = useState();
 
   useEffect(() => {
     setProperty(gallerys?.find((val) => val.id[lang] == id));
   }, [id]);
-  console.log(data)
+  console.log(id)
   return (
     <>
       <div className={lang}>
-        
+        {id}
         {/* <!-- Main Header Nav --> */}
         <Header />
 
@@ -158,4 +159,4 @@ const ListingDynamicDetailsV1 = ({data}) => {
 };
 
 
-export default dynamic(() => Promise.resolve(ListingDynamicDetailsV1), { ssr: false });
+export default dynamic(() => Promise.resolve(Page), { ssr: false });
