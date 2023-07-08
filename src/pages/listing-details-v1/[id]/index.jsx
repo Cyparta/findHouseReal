@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../../components/common/footer/CopyrightFooter";
 
-const Page = () => {
+const Index = () => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
@@ -159,4 +159,4 @@ const Page = () => {
 };
 
 
-export default dynamic(() => Promise.resolve(Page), { ssr: false });
+export default dynamic(() => Promise.resolve(Index), { ssr: false });
