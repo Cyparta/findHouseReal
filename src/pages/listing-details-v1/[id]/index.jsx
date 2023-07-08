@@ -18,7 +18,7 @@ const Page = () => {
   let lang = useSelector((state) => state.lang.value.lang);
   
   const {id} = router.query;
-  console.log(router,params)
+  console.log(router)
   let [property, setProperty] = useState();
 
   useEffect(() => {
