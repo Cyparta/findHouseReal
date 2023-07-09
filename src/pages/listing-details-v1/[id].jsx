@@ -12,9 +12,21 @@ import Sidebar from "../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
-export async function getServerSideProps({ params }) {
+export async function getStaticPaths() {
+    return {
+      paths: [
+        // String variant:
+        '/listing-details-v1/[id]',
+        // Object variant:
+        { params: { id: '0' } },
+      ],
+      fallback: true,
+    }
+  }
+  
+export async function  getStaticProps({ params }) {
   const { id } = params;
-  console.log(id,params)
+ 
   return {
     props: {
       id,
@@ -26,7 +38,7 @@ const Page = ({id}) => {
   let lang = useSelector((state) => state.lang.value.lang);
   
 //   const {id} = router.query;
- 
+console.log(id)
   let [property, setProperty] = useState();
 
   useEffect(() => {
