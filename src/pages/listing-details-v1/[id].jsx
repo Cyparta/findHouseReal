@@ -2,29 +2,36 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
-import Footer from "../../../components/common/footer/Footer";
-import Header from "../../../components/common/header/DefaultHeader";
-import MobileMenu from "../../../components/common/header/MobileMenu";
-import PopupSignInUp from "../../../components/common/PopupSignInUp";
-import { gallerys } from "../../../data/gallery";
-import DetailsContent from "../../../components/listing-details-v1/DetailsContent";
-import Sidebar from "../../../components/listing-details-v1/Sidebar";
+import Footer from "../../components/common/footer/Footer";
+import Header from "../../components/common/header/DefaultHeader";
+import MobileMenu from "../../components/common/header/MobileMenu";
+import PopupSignInUp from "../../components/common/PopupSignInUp";
+import { gallerys } from "../../data/gallery";
+import DetailsContent from "../../components/listing-details-v1/DetailsContent";
+import Sidebar from "../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
-import CopyrightFooter from "../../../components/common/footer/CopyrightFooter";
-
-const index = () => {
+import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
+export async function getServerSideProps({ params }) {
+  const { id } = params;
+  console.log(id,params)
+  return {
+    props: {
+      id,
+    },
+  };
+}
+const Page = ({id}) => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
-  const {id} = router.query;
-  console.log(router)
+//   const {id} = router.query;
+ 
   let [property, setProperty] = useState();
 
   useEffect(() => {
     setProperty(gallerys?.find((val) => val.id[lang] == id));
   }, [id]);
-  console.log(id)
   return (
     <>
       <div className={lang}>
@@ -159,4 +166,4 @@ const index = () => {
 };
 
 
-export default dynamic(() => Promise.resolve(index), { ssr: false });
+export default dynamic(() => Promise.resolve(Page), { ssr: false });

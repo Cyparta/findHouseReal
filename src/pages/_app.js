@@ -4,7 +4,6 @@ import { store } from "../app/store";
 import ScrollToTop from "../components/common/ScrollTop";
 import Seo from "../components/common/seo";
 import "../index.scss";
-import Error from "./listing-details-v1/error";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -29,6 +28,7 @@ function MyApp({ Component, pageProps }) {
       />
       <Provider store={store}>
         {/* <div> */}
+       
         <Component {...pageProps} />
         {/* </div> */}
       </Provider>
