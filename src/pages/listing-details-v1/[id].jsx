@@ -15,10 +15,7 @@ import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 export async function getStaticPaths() {
     return {
       paths: [
-        // String variant:
-        '/listing-details-v1/[id]',
-        // Object variant:
-        { params: { id: '0' } },
+       
       ],
       fallback: true,
     }
@@ -33,7 +30,7 @@ export async function  getStaticProps({ params }) {
     },
   };
 }
-const Page = ({id}) => {
+const Index = ({id}) => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
@@ -178,4 +175,4 @@ console.log(id)
 };
 
 
-export default dynamic(() => Promise.resolve(Page), { ssr: false });
+export default dynamic(() => Promise.resolve(Index), { ssr: false });
