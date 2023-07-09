@@ -18,7 +18,7 @@ export async function getStaticPaths() {
         '/listing-details-v1/[id]',
         { params: { id: '0' } },
       ],
-      fallback: "blocking",
+      fallback: false,
     }
   }
   
