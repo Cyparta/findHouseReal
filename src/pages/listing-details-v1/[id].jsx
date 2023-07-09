@@ -13,53 +13,21 @@ import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 
-const Index = ()=> {
+const Index = () => {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
   const {id} = router.query;
-  if (!id) {
-    return (
-        <div className={lang}>
-        
-        {/* <!-- Main Header Nav --> */}
-        <Header />
+ 
+  let [property, setProperty] = useState(gallerys?.find((val) => val.id[lang] == id));
 
-        {/* <!--  Mobile Menu --> */}
-        <MobileMenu />
-
-        {/* <!-- Modal --> */}
-        <PopupSignInUp />
-
-        {/* <!-- Listing Single Property --> */}
-       
-        <p>Loading...</p>
-        {/* <!-- Agent Single Grid View --> */}
-        
-
-        {/* <!-- Our Footer --> */}
-        <section className="footer_one">
-          <div className="container">
-            <div className="row">
-              <Footer />
-            </div>
-          </div>
-        </section>
-
-        {/* <!-- Our Footer Bottom Area --> */}
-        <section className="footer_middle_area pt40 pb40">
-          <div className="container">
-            <CopyrightFooter />
-          </div>
-        </section>
-      </div>
-    );
-  }
-
+  useEffect(() => {
+    setProperty(gallerys?.find((val) => val.id[lang] == id));
+  }, [id]);
   return (
     <>
       <div className={lang}>
-        {id}
+
         {/* <!-- Main Header Nav --> */}
         <Header />
 
@@ -76,15 +44,15 @@ const Index = ()=> {
               <div className="row mb30">
                 <div className="col-lg-7 col-xl-8">
                   <div className="single_property_title mt30-767">
-                    <h2>{gallerys[id]?.title[lang]}</h2>
-                    <p>{gallerys[id]?.address[lang]}</p>
+                    <h2>{property?.title[lang]}{id}</h2>
+                    <p>{property?.address[lang]}</p>
                   </div>
                 </div>
                 <div className="col-lg-5 col-xl-4">
                   <div className="single_property_social_share position-static transform-none">
                     <div className="price float-start fn-400">
                       <h2>
-                        ${gallerys[id]?.price[lang]}
+                        ${property?.price[lang]}
                         <small>/mo</small>
                       </h2>
                     </div>
@@ -101,8 +69,8 @@ const Index = ()=> {
                     <div className="col-lg-12">
                       <div className="spls_style_two mb30-520">
                         <Item
-                          original={gallerys[id]?.img[lang]}
-                          thumbnail={gallerys[id]?.img[lang]}
+                          original={property?.img[lang]}
+                          thumbnail={property?.img[lang]}
                           width={752}
                           height={450}
                         >
@@ -110,7 +78,7 @@ const Index = ()=> {
                             <div role="button" ref={ref} onClick={open}>
                               <img
                                 className="img-fluid w100 cover lds-1"
-                                src={gallerys[id]?.img[lang]}
+                                src={property?.img[lang]}
                                 alt="1.jpg"
                               />
                             </div>
@@ -156,7 +124,7 @@ const Index = ()=> {
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-lg-8">
-                <DetailsContent property={gallerys[id]}/>
+                <DetailsContent property={property}/>
               </div>
               {/* End details content .col-lg-8 */}
 

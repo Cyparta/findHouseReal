@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "serve": "sirv out --port 8080 --cors"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
