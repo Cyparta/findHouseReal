@@ -15,9 +15,10 @@ import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 export async function getStaticPaths() {
     return {
       paths: [
-       
+        '/listing-details-v1/[id]',
+        { params: { id: '0' } },
       ],
-      fallback: true,
+      fallback: "blocking",
     }
   }
   
