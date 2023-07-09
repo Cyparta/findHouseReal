@@ -13,14 +13,25 @@ import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 export async function getStaticPaths() {
-    return {
-      paths: [
-        '/listing-details-v1/[id]',
-        { params: { id: '0' } },
-      ],
-      fallback: false,
+    try{
+        return {
+            paths: [
+              '/listing-details-v1/[id]',
+              { params: { id: '0' } },
+            ],
+            fallback: true,
+          }
+    }catch(error){
+        return {
+            paths: [
+             
+            ],
+            fallback: true,
+          }
+        
     }
-  }
+      
+}
   
 export async function  getStaticProps({ params }) {
   const { id } = params;
