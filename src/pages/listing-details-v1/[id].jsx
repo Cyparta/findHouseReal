@@ -12,52 +12,50 @@ import Sidebar from "../../components/listing-details-v1/Sidebar";
 import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
-export async function getStaticPaths() {
-    try{
-       
-        return {
-            paths: [
-              '/listing-details-v1/[id]'
-            ],
-            fallback: true,
-          }
-    }catch(error){
-        return {
-            paths: [
-                {
-                  params: {
-                    error: 'Could not load post data',
-                  },
-                },
-              ],
-              fallback: true,
-            
-          }
-        
-    }
-      
-}
-  
-export async function  getStaticProps({ params }) {
-  const { id } = params;
- 
-  return {
-    props: {
-      id:String(id),
-    },
-  };
-}
-const Index = ({id}) => {
+
+const Index = ()=> {
   const router = useRouter();
   let lang = useSelector((state) => state.lang.value.lang);
   
-//   const {id} = router.query;
-console.log(id)
-  let [property, setProperty] = useState();
+  const {id} = router.query;
+  if (!id) {
+    return (
+        <div className={lang}>
+        
+        {/* <!-- Main Header Nav --> */}
+        <Header />
 
-  useEffect(() => {
-    setProperty(gallerys?.find((val) => val.id[lang] == id));
-  }, [id]);
+        {/* <!--  Mobile Menu --> */}
+        <MobileMenu />
+
+        {/* <!-- Modal --> */}
+        <PopupSignInUp />
+
+        {/* <!-- Listing Single Property --> */}
+       
+        <p>Loading...</p>
+        {/* <!-- Agent Single Grid View --> */}
+        
+
+        {/* <!-- Our Footer --> */}
+        <section className="footer_one">
+          <div className="container">
+            <div className="row">
+              <Footer />
+            </div>
+          </div>
+        </section>
+
+        {/* <!-- Our Footer Bottom Area --> */}
+        <section className="footer_middle_area pt40 pb40">
+          <div className="container">
+            <CopyrightFooter />
+          </div>
+        </section>
+      </div>
+    );
+  }
+
   return (
     <>
       <div className={lang}>
@@ -78,15 +76,15 @@ console.log(id)
               <div className="row mb30">
                 <div className="col-lg-7 col-xl-8">
                   <div className="single_property_title mt30-767">
-                    <h2>{property?.title[lang]}</h2>
-                    <p>{property?.address[lang]}</p>
+                    <h2>{gallerys[id]?.title[lang]}</h2>
+                    <p>{gallerys[id]?.address[lang]}</p>
                   </div>
                 </div>
                 <div className="col-lg-5 col-xl-4">
                   <div className="single_property_social_share position-static transform-none">
                     <div className="price float-start fn-400">
                       <h2>
-                        ${property?.price[lang]}
+                        ${gallerys[id]?.price[lang]}
                         <small>/mo</small>
                       </h2>
                     </div>
@@ -103,8 +101,8 @@ console.log(id)
                     <div className="col-lg-12">
                       <div className="spls_style_two mb30-520">
                         <Item
-                          original={property?.img[lang]}
-                          thumbnail={property?.img[lang]}
+                          original={gallerys[id]?.img[lang]}
+                          thumbnail={gallerys[id]?.img[lang]}
                           width={752}
                           height={450}
                         >
@@ -112,7 +110,7 @@ console.log(id)
                             <div role="button" ref={ref} onClick={open}>
                               <img
                                 className="img-fluid w100 cover lds-1"
-                                src={property?.img[lang]}
+                                src={gallerys[id]?.img[lang]}
                                 alt="1.jpg"
                               />
                             </div>
@@ -158,7 +156,7 @@ console.log(id)
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-lg-8">
-                <DetailsContent property={property}/>
+                <DetailsContent property={gallerys[id]}/>
               </div>
               {/* End details content .col-lg-8 */}
 
