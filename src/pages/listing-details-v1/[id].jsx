@@ -13,15 +13,25 @@ import { useSelector } from "react-redux";
 import dynamic from "next/dynamic";
 import CopyrightFooter from "../../components/common/footer/CopyrightFooter";
 export async function getStaticPaths() {
-    
+    try{
         return {
             paths: [
-             
+              '/listing-details-v1/[id]',
+              { params: { id: '0' } },
             ],
-            fallback: false,
+            fallback: true,
+          }
+    }catch(error){
+        return {
+            paths:{
+                error: {
+                    message: 'Could not load post data',
+                  },
+                }
+            
           }
         
-    
+    }
       
 }
   
