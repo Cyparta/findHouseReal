@@ -12,7 +12,7 @@ const HeroFilter = () => {
       </div>
       {/* End .home-text */}
 
-      <GlobalHeroFilter />
+      {/* <GlobalHeroFilter /> */}
     </div>
   );
 };

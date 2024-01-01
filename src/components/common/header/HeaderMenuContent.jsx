@@ -259,7 +259,7 @@ const HeaderMenuContent = ({ float = "" }) => {
           </a>
         </Link>
       </li>
-      <li className="dropitem">
+      {/* <li className="dropitem">
         <Link href="/blog-list-1">
           <a
             // href="#"
@@ -270,7 +270,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             <span className="title">{main.blog1[lang]}</span>
           </a>
         </Link>
-      </li>
+      </li> */}
       {/* End .dropitem */}
       <li className="dropitem">
         <Link href="/listing-grid-v1">
@@ -339,7 +339,7 @@ const HeaderMenuContent = ({ float = "" }) => {
       </li>
       {/* End .dropitem */}
 
-      <li className={`list-inline-item list_s ${float}`}>
+      {/* <li className={`list-inline-item list_s ${float}`}>
         <a
           href="#"
           className="btn flaticon-user"
@@ -350,7 +350,7 @@ const HeaderMenuContent = ({ float = "" }) => {
             {main.login[lang]} / {main.register[lang]}
           </span>
         </a>
-      </li>
+      </li> */}
       {/* End .dropitem */}
       <LangBtn />
       {/* <li className={`list-inline-item add_listing ${float}`}>

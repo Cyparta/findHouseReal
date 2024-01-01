@@ -21,9 +21,8 @@ const Header = () => {
 
   return (
     <header
-      className={`header-nav menu_style_home_one navbar-scrolltofixed stricky main-menu  ${
-        navbar ? "stricky-fixed " : ""
-      }`}
+      className={`header-nav menu_style_home_one navbar-scrolltofixed stricky main-menu  ${navbar ? "stricky-fixed " : ""
+        }`}
     >
       <div
         className="container-fluid p0 d-flex 

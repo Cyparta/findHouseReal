@@ -442,8 +442,8 @@ const initialState = {
           ar: "حول الموقع",
         },
         text: {
-          en: "We’re reimagining how you buy, sell and rent. It’s now easier to get into a place you love. So let’s do this, together.",
-          ar: "نحن نعيد تصور كيفية الشراء والبيع والإيجار. أصبح من السهل الآن الوصول إلى مكان تحبه. لذلك دعونا نفعل هذا معًا.",
+          en: "Dar Farha is an Egyptian company that provides its services in three main sectors: the contracting sector, the finishing and decoration sector, and the real estate investment sector.",
+          ar: "دار فرحة شركة مصرية تقدم خدماتها في ثلاث قطاعات رئيسية: قطاع المقاولات قطاع التشطيبات والديكورات قطاع الاستثمار العقاري",
         },
       },
       quickLinks: {
@@ -478,8 +478,8 @@ const initialState = {
           ar: "اتصل  بنا",
         },
         li1: {
-          en: "info@findhouse.com",
-          ar: "info@findhouse.com",
+          en: "info@dar-farha.com",
+          ar: "info@dar-farha.com",
         },
         li2: {
           en: "Collins Street West, Victoria",
@@ -490,12 +490,12 @@ const initialState = {
           ar: "8007 ، أستراليا.",
         },
         li4: {
-          en: "+1 246-345-0699",
-          ar: "+1 246-345-0699",
+          en: "01004005599",
+          ar: "01004005599",
         },
         li5: {
-          en: "+1 246-345-0695",
-          ar: "+1 246-345-0695",
+          en: "01022253111",
+          ar: "01022253111",
         },
       },
       followUs: {
