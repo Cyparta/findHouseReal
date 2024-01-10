@@ -56,7 +56,7 @@ const FilterTopBar = ({data, length=10}) => {
       <div className="col-sm-12 col-md-8 col-lg-8 col-xl-7">
         <div className="right_area  tac-xsd">
           <ul>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <span className="stts">{main.statusText[lang]}</span>
               <select
                 className="selectpicker show-tick"
@@ -67,7 +67,7 @@ const FilterTopBar = ({data, length=10}) => {
                 <option value="old">{main.status.opt2[lang]}</option>
                 <option value="recent">{main.status.opt3[lang]}</option>
               </select>
-            </li>
+            </li> */}
             {/* <li className="list-inline-item">
               <span className="shrtby">{main.sortBy.sort[lang]}</span>
               <select
