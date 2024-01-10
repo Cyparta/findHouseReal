@@ -33,7 +33,7 @@ const WhyChoose = ({ style = "" }) => {
       },
       descriptions: {
         en: `Dar Farha provides design and implementation services for all interior decoration works And finishes, through a specialized group of trained and qualified decorators and technicians to provide the best possible service`,
-        ar: "لتقديم أفضل خدمة ممكنة تقدم شركة دار فرحة خدمات تصميم وتنفيذ جميع أعمال الديكور الداخلي والتشطيبات وذلك من خلال مجموعة متخصصة من مهندسي الديكور والفنيين المدربين والمؤهلين ",
+        ar: "لتقديم أفضل خدمة ممكنة تقدم شركة دار فرحة خدمات تصميم وتنفيذ جميع أعمال الديكور الداخلي والتشطيبات وذلك من خلال مجموعة متخصصة من مهندسي الديكور والفنيين المدربين",
       },
     },
   ];

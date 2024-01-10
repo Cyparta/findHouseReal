@@ -482,12 +482,12 @@ const initialState = {
           ar: "info@dar-farha.com",
         },
         li2: {
-          en: "Collins Street West, Victoria",
-          ar: "كولينز ستريت ويست ، فيكتوريا",
+          en: "6 of octobar",
+          ar: "مدينة 6 اكتوبر",
         },
         li3: {
-          en: "8007, Australia.",
-          ar: "8007 ، أستراليا.",
+          en: "Egypt",
+          ar: "مصر",
         },
         li4: {
           en: "01004005599",

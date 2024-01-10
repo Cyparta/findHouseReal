@@ -20,19 +20,20 @@ const LangBtn = () => {
     setToggle(lang);
   }, [toggleLangto, lang]);
   return (
-    <li className="list-inline-item add_listing" style={{ width: "100px" }}>
-      <select
-        id="valueneed"
-        name="country"
-        className="theme-btn"
-        value={toggleLangto}
-        onChange={(e) => handleToggleLangto(e)}
-      >
-        <option value="en">English</option>
-        <option value="ar">عربي</option>
-      </select>
-      {/* <a href="#">{toggleLangto === "en" ? "ar" : "en"} </a> */}
-    </li>
+    <>
+      <li className="list-inline-item add_listing" style={{ width: "100px" }}>
+        <select
+          id="valueneed"
+          name="country"
+          className="theme-btn"
+          value={toggleLangto}
+          onChange={(e) => handleToggleLangto(e)}
+        >
+          <option value="en" className="opt-item">English</option>
+          <option value="ar" className="opt-item">عربي</option>
+        </select>
+      </li>
+    </>
   );
 };
 

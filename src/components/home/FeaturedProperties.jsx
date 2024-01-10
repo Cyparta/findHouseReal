@@ -6,7 +6,7 @@ import { gallerys } from "../../data/gallery";
 
 const FeaturedProperties = () => {
   const lang = useSelector((state) => state.lang.value.lang);
-  const month = { en: "/mo", ar: "/شهر" };
+  const month = { en: "EGP", ar: "جنيه" };
   const settings = {
     dots: true,
     arrows: false,
@@ -32,76 +32,82 @@ const FeaturedProperties = () => {
     ],
   };
 
-  let content = properties?.slice(0, gallerys.length)?.map((item, index) => {
+  const units = useSelector((state) => state.units.data)
+
+  console.log(units)
+  // properties?.slice(0, gallerys.length)?
+
+  let content = units?.results?.map((item, index) => {
     return (
       <div className="item" key={item.id[lang]}>
         <div className="feat_property">
           <div className="thumb">
             <img
               className="img-whp"
-              src={gallerys[index]?.img[lang]}
+              src={item.main_image}
               alt="fp1.jpg"
             />
             <div className="thmb_cntnt">
               <ul className="tag mb0">
-                {item.saleTag.map((val, i) => (
+                {item?.saleTag?.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">{val[lang]}</a>
                   </li>
                 ))}
               </ul>
-              {/* End .tag */}
-
-              <ul className="icon mb0">
-                <li className="list-inline-item">
-                  <a href="#">
-                    <span className="flaticon-transfer-1"></span>
-                  </a>
-                </li>
-                <li className="list-inline-item">
-                  <a href="#">
-                    <span className="flaticon-heart"></span>
-                  </a>
-                </li>
-              </ul>
-              {/* End .icon */}
-
-              <Link href={`/listing-details-v1/${gallerys[index]?.id[lang]}`}>
-                <a className="fp_price">
-                  ${gallerys[index]?.price[lang]}
-                  <small>{month[lang]}</small>
-                </a>
-              </Link>
+              <a className="fp_price">
+                {item?.price} {month[lang]}
+              </a>
             </div>
           </div>
           {/* End .thumb */}
 
           <div className="details">
             <div className="tc_content">
-              <p className="text-thm">{gallerys[index]?.type[lang]}</p>
+              <p className="text-thm">{item?.city}</p>
               <h4>
-                <Link href={`/listing-details-v1/${gallerys[index]?.id[lang]}`}>
-                  <a>{gallerys[index]?.title[lang]}</a>
+                <Link href={`/units-details/${item?.id}`}>
+                  <a>{item?.address}</a>
                 </Link>
               </h4>
               <p>
                 <span className="flaticon-placeholder"></span>
-                {gallerys[index]?.address[lang]}
+                {item?.comment}
               </p>
 
+
               <ul className="prop_details mb0">
-                {item.itemDetails.map((val, i) => (
+                {/* {item?.itemDetails?.map((val, i) => (
                   <li className="list-inline-item" key={i}>
                     <a href="#">
                       {val.name[lang]}: {val.number[lang]}
                     </a>
                   </li>
-                ))}
+                ))} */}
+
+                <li className="list-inline-item">
+                  <a href="#">
+                    مطبخ : {item.kitchen_count}
+                  </a>
+                </li>
+                {/* living_room_count */}
+
+                <li className="list-inline-item">
+                  <a href="#">
+                    حمام : {item.bath_count}
+                  </a>
+                </li>
+
+                <li className="list-inline-item">
+                  <a href="#">
+                    غرف المعيشة : {item.living_room_count}
+                  </a>
+                </li>
               </ul>
             </div>
             {/* End .tc_content */}
 
-            <div className="fp_footer">
+            {/* <div className="fp_footer">
               <ul className="fp_meta float-start mb0">
                 <li className="list-inline-item">
                   <Link href="/agent-v2">
@@ -117,7 +123,7 @@ const FeaturedProperties = () => {
                 </li>
               </ul>
               <div className="fp_pdate float-end">{item.postedYear[lang]}</div>
-            </div>
+            </div> */}
             {/* End .fp_footer */}
           </div>
           {/* End .details */}

@@ -39,7 +39,7 @@ module.exports = [
       en: `${realestateforrent.length} Properties`,
       ar: `${realestateforrent.length} ملكيات`,
     },
-    column: { en: "col-lg-4 col-xl-4", ar: "col-lg-4 col-xl-4" },
+    column: { en: "col-lg-8 col-xl-8", ar: "col-lg-8 col-xl-8" },
   },
 
   {

@@ -6,6 +6,7 @@ import langSlice from "../features/lang/langSlice";
 import propertiesSlice from "../features/properties/propertiesSlice";
 import datetofilterslice from "../features/datetofilter/datetofilterslice";
 import pageSlice from "../features/page/pageSlice";
+import unitsSlice from "../features/units/unitsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,6 +17,7 @@ export const store = configureStore({
     lang: langSlice,
     datetofilter: datetofilterslice,
     page: pageSlice,
+    units: unitsSlice
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware().concat(api.middleware),

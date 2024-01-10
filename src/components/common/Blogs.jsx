@@ -25,25 +25,6 @@ const Blogs = () => {
                   </Link>
                 </h4>
               </div>
-              <div className="fp_footer">
-                <ul className="fp_meta float-start mb0">
-                  <li className="list-inline-item">
-                    <Link href="/agent-v2">
-                      <a>
-                        <img src={item.posterAvatar[lang]} alt="pposter1.png" />
-                      </a>
-                    </Link>
-                  </li>
-                  <li className="list-inline-item">
-                    <Link href="/agent-v2">
-                      <a>{item.posterName[lang]}</a>
-                    </Link>
-                  </li>
-                </ul>
-                <a className="fp_pdate float-end" href="#">
-                  {item.postedDate[lang]}
-                </a>
-              </div>
             </div>
           </div>
         </div>

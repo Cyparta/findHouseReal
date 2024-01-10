@@ -33,7 +33,11 @@ const CopyrightFooter = () => {
           justify-content-evenly
     align-items-center"
         >
+
+          <a href="https://cyparta.com/" target="_blank">
+
           <Image src={copywrite} alt="" />
+          </a>
           <p className="m-0">
             &copy; {new Date().getFullYear()}{" "}
             <a

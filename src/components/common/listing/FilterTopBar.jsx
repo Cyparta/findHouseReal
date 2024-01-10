@@ -6,8 +6,8 @@ import {
   addStatusType,
 } from "../../../features/filter/filterSlice";
 
-const FilterTopBar = ({data}) => {
-  const { length } = useSelector((state) => state.properties);
+const FilterTopBar = ({data, length=10}) => {
+  // const { length } = useSelector((state) => state.properties);
   const { statusType, featured } = useSelector((state) => state.filter);
   const [getStatus, setStatus] = useState(statusType);
   const [getFeatured, setFeatured] = useState(featured);
@@ -68,7 +68,7 @@ const FilterTopBar = ({data}) => {
                 <option value="recent">{main.status.opt3[lang]}</option>
               </select>
             </li>
-            <li className="list-inline-item">
+            {/* <li className="list-inline-item">
               <span className="shrtby">{main.sortBy.sort[lang]}</span>
               <select
                 className="selectpicker show-tick"
@@ -79,7 +79,7 @@ const FilterTopBar = ({data}) => {
                 <option value="sale">{main.sortBy.sale[lang]}</option>
                 <option value="rent">{main.sortBy.rent[lang]}</option>
               </select>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -12,10 +12,16 @@ import PopupSignInUp from "../../common/PopupSignInUp";
 import BreadCrumb2 from "./BreadCrumb2";
 import FeaturedItem from "./FeaturedItem";
 import { gallerys } from "../../../data/gallery";
+import FeaturedProperties from "../../home/FeaturedProperties";
 
 const index = () => {
   const lang = useSelector((state) => state.lang.value.lang);
   
+
+  let units = useSelector((state) => state.units.data)
+  let filter = useSelector((state) => state.units.filter)
+
+  console.log(units)
   return (
     <>
       <div className={lang}>
@@ -51,7 +57,7 @@ const index = () => {
               {/* End .col filter grid list */}
             </div>
             {/* End Page Breadcrumb and Grid,List and filter Button */}
-
+            
             <div className="row">
               <div className="col-lg-4 col-xl-4">
                 <div className="sidebar-listing-wrapper">
@@ -86,20 +92,21 @@ const index = () => {
               <div className="col-md-12 col-lg-8">
                 <div className="grid_list_search_result ">
                   <div className="row align-items-center">
-                    <FilterTopBar data={gallerys}/>
+                    <FilterTopBar data={gallerys} length={units.count}/>
                   </div>
                 </div>
                 {/* End .row */}
 
                 <div className="row">
                   <FeaturedItem />
+                  {/* <FeaturedProperties /> */}
                 </div>
                 {/* End .row */}
 
                 <div className="row">
                   <div className="col-lg-12 mt20">
                     <div className="mbp_pagination">
-                      <Pagination data={gallerys} itemsPerPage={3} />
+                      <Pagination data={gallerys} totalPages={Math.ceil(units.count / 9)} />
                     </div>
                   </div>
                   {/* End paginaion .col */}

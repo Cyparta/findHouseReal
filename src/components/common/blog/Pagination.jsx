@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { adddata } from "../../../features/page/pageSlice";
 import { useEffect } from "react";
+import { updateFilter } from "../../../features/units/unitsSlice";
 
-function Pagination({ itemsPerPage, data }) {
+function Pagination({ itemsPerPage, data, totalPages=10 }) {
   let dispatch = useDispatch();
   const [currentPage, setCurrentPage] = useState(1);
-  let totalPages = Math.ceil(data?.length / itemsPerPage);
+  // let totalPages = Math.ceil(data?.length / itemsPerPage);
   let startIndex = (currentPage - 1) * itemsPerPage;
   let endIndex = startIndex + itemsPerPage;
   let currentData = data?.slice(startIndex, endIndex);
@@ -14,10 +15,10 @@ function Pagination({ itemsPerPage, data }) {
     event.preventDefault();
     setCurrentPage(page);
   }
-  console.log(currentData);
   useEffect(() => {
     dispatch(adddata(currentData));
   }, [currentPage]);
+
   return (
     <div className="en">
       <ul>
@@ -31,6 +32,9 @@ function Pagination({ itemsPerPage, data }) {
             <li
               key={i}
               className={`page-item${i + 1 === currentPage ? " active" : ""}`}
+              onClick={() => 
+                dispatch(updateFilter({name: 'page', val: i+1}))
+              }
             >
               <a
                 className="page-link"

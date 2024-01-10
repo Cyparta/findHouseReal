@@ -10,8 +10,10 @@ import Header from "./Header";
 import Hero from "./Hero";
 import WhyChoose from "../common/WhyChoose";
 import PopupSignInUp from "../common/PopupSignInUp";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import axios from "axios";
+import { GETUnits } from "../../features/units/unitsSlice";
 const Index = () => {
   const lang = useSelector((state) => state.lang.value.lang);
   const featured = useSelector((state) => state.lang.value.featureProperty);
@@ -19,6 +21,12 @@ const Index = () => {
   const chooseUs = useSelector((state) => state.lang.value.chooseUs);
   const articleTips = useSelector((state) => state.lang.value.articleTips);
   const ourPartners = useSelector((state) => state.lang.value.ourPartners);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(GETUnits())
+  }, [])
+
   return (
     <>
       <div className={lang}>
