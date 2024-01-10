@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Seo from '../../components/common/seo'
 import MobileMenu from '../../components/common/header/MobileMenu'
 import PopupSignInUp from '../../components/common/PopupSignInUp'
@@ -10,34 +10,51 @@ import Header from '../../components/common/header/DefaultHeader'
 import { useSelector } from 'react-redux'
 import styles from './styles.module.css'
 
-export async function getServerSideProps(context) {
-    const productId = context.params?.id;
 
-    const url = `https://dolphin-app-u2qj5.ondigitalocean.app/en/aqar/api/router/website-units/${productId}`
-    let data;
-    try {
+// export async function getServerSideProps(context) {
+//     const productId = context.params?.id;
 
-        const response = await axios.get(
-            url
-        );
-        data = response.data;
+//     const url = `https://dolphin-app-u2qj5.ondigitalocean.app/en/aqar/api/router/website-units/${productId}`
+//     let data;
+//     try {
 
-    } catch (error) {
-        console.log(error)
-    }
-    return {
-        props: {
-            data: data || null,
-        },
-    };
-}
+//         const response = await axios.get(
+//             url
+//         );
+//         data = response.data;
 
-const UnitsDetails = ({ data }) => {
+//     } catch (error) {
+//         console.log(error)
+//     }
+//     return {
+//         props: {
+//             data: data || null,
+//         },
+//     };
+// }
+
+const UnitsDetails = () => {
     const lang = useSelector((state) => state.lang.value.lang);
     const router = useRouter();
-
     console.log(router.query.id)
+    const [data, setData] = useState([])
+
     console.log(data)
+    
+    const fetchDet = async () => {
+        try {
+            const res = await axios.get(`https://dolphin-app-u2qj5.ondigitalocean.app/en/aqar/api/router/website-units/${router?.query?.id}/`)
+            setData(res.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    useEffect(() => {
+        if (router?.query?.id !== undefined) {
+            fetchDet()
+        }
+    }, [router?.query?.id])
     return (
         <>
             <div className={lang}>
