@@ -7,7 +7,6 @@ import "../index.scss";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
-
 }
 
 function MyApp({ Component, pageProps }) {

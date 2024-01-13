@@ -1,6 +1,7 @@
 module.exports.blogs = [
   {
     id: { en: "1", ar: "1" },
+    to:{en:"gallery", ar:"gallery"},
     img: {
       en: "/assets/images/home/450_1.png",
       ar: "/assets/images/home/450_1.png",
@@ -74,6 +75,7 @@ module.exports.blogs = [
   },
   {
     id: { en: "2", ar: "2" },
+    to:{en:"galleryreal", ar:"galleryreal"},
     img: {
       en: "/assets/images/home/450_2.png",
       ar: "/assets/images/home/450_2.png",
@@ -186,6 +188,7 @@ Complete the deal.
   },
   {
     id: { en: "3", ar: "3" },
+    to:{en:"gallerydecoration", ar:"gallerydecoration"},
     img: {
       en: "/assets/images/home/450_3.png",
       ar: "/assets/images/home/450_3.png",
