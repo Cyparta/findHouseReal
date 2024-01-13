@@ -40,7 +40,7 @@ const UnitsDetails = () => {
     const [data, setData] = useState([])
 
     console.log(data)
-    
+
     const fetchDet = async () => {
         try {
             const res = await axios.get(`https://dolphin-app-u2qj5.ondigitalocean.app/en/aqar/api/router/website-units/${router?.query?.id}/`)

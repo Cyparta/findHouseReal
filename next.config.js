@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/findHouseReal",
+  // basePath: "/findHouseReal",
+  basePath: "",
   // output: "export",
   trailingSlash: true,
 };
