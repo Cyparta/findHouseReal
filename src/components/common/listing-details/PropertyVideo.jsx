@@ -49,7 +49,7 @@ const PropertyVideo = () => {
             <div className="thumb">
               <img
                 className="pro_img img-fluid w100"
-                src="/findHouseReal/assets/images/background/7.jpg"
+                src="/assets/images/background/7.jpg"
                 alt="7.jpg"
               />
               <div className="overlay_icon">
@@ -73,7 +73,7 @@ const PropertyVideo = () => {
             <div className="thumb">
               <img
                 className="pro_img img-fluid w100"
-                src="/findHouseReal/assets/images/background/7.jpg"
+                src="/assets/images/background/7.jpg"
                 alt="7.jpg"
               />
               <div className="overlay_icon">

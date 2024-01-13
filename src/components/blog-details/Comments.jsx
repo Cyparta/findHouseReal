@@ -44,7 +44,7 @@ const Comments = () => {
       {commmetContent.map((item) => (
         <div className="mbp_first media" key={item.id[lang]}>
           <img
-            src={`/findHouseReal/assets/images/testimonial/${item.img[lang]}.png`}
+            src={`/assets/images/testimonial/${item.img[lang]}.png`}
             className="mr-3"
             alt={item.img[lang]}
           />

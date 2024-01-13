@@ -39,7 +39,7 @@ const FloorPlans = () => {
           <div className="card-body text-center">
             <img
               className="img-fluid"
-              src="/findHouseReal/assets/images/resource/floor_plan.png"
+              src="/assets/images/resource/floor_plan.png"
               alt="floor_plan.png"
             />
             <p>
@@ -90,7 +90,7 @@ const FloorPlans = () => {
           <div className="card-body text-center">
             <img
               className="img-fluid"
-              src="/findHouseReal/assets/images/resource/floor_plan.png"
+              src="/assets/images/resource/floor_plan.png"
               alt="floor_plan.png"
             />
             <p>

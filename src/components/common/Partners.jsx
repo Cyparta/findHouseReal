@@ -7,7 +7,7 @@ const Partners = () => {
           <div className="our_partner">
             <img
               className="img-fluid"
-              src={`/findHouseReal/assets/images/partners/${val}.png`}
+              src={`/assets/images/partners/${val}.png`}
               alt="1.png"
             />
           </div>

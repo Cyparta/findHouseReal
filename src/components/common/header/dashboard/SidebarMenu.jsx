@@ -48,7 +48,7 @@ const SidebarMenu = () => {
           <Link href="/">
             <a>
               <img
-                src="/findHouseReal/assets/images/logo/logo.png"
+                src="/assets/images/logo/logo.png"
                 alt="header-logo2.png"
               />
             </a>

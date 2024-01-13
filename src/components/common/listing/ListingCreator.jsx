@@ -12,7 +12,7 @@ const Creaator = () => {
     <div className="media d-flex">
       <img
         className="me-3"
-        src="/findHouseReal/assets/images/team/e1.png"
+        src="/assets/images/team/e1.png"
         alt="lc1.png"
       />
       <div className="media-body">

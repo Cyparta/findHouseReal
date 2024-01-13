@@ -2,8 +2,8 @@ module.exports = [
   {
     id: { en: "1", ar: "1" },
     img: {
-      en: "/findHouseReal/assets/images/team/5.jpg",
-      ar: "/findHouseReal/assets/images/team/5.jpg",
+      en: "/assets/images/team/5.jpg",
+      ar: "/assets/images/team/5.jpg",
     },
     socialList: [
       {
@@ -55,8 +55,8 @@ module.exports = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouseReal/assets/images/team/6.jpg",
-      ar: "/findHouseReal/assets/images/team/6.jpg",
+      en: "/assets/images/team/6.jpg",
+      ar: "/assets/images/team/6.jpg",
     },
     socialList: [
       {
@@ -108,8 +108,8 @@ module.exports = [
   {
     id: { en: "3", ar: "3" },
     img: {
-      en: "/findHouseReal/assets/images/team/7.jpg",
-      ar: "/findHouseReal/assets/images/team/7.jpg",
+      en: "/assets/images/team/7.jpg",
+      ar: "/assets/images/team/7.jpg",
     },
     socialList: [
       {
@@ -161,8 +161,8 @@ module.exports = [
   {
     id: { en: "4", ar: "4" },
     img: {
-      en: "/findHouseReal/assets/images/team/8.jpg",
-      ar: "/findHouseReal/assets/images/team/8.jpg",
+      en: "/assets/images/team/8.jpg",
+      ar: "/assets/images/team/8.jpg",
     },
     socialList: [
       {
@@ -214,8 +214,8 @@ module.exports = [
   {
     id: { en: "5", ar: "5" },
     img: {
-      en: "/findHouseReal/assets/images/team/9.jpg",
-      ar: "/findHouseReal/assets/images/team/9.jpg",
+      en: "/assets/images/team/9.jpg",
+      ar: "/assets/images/team/9.jpg",
     },
     socialList: [
       {
@@ -267,8 +267,8 @@ module.exports = [
   {
     id: { en: "6", ar: "6" },
     img: {
-      en: "/findHouseReal/assets/images/team/10.jpg",
-      ar: "/findHouseReal/assets/images/team/10.jpg",
+      en: "/assets/images/team/10.jpg",
+      ar: "/assets/images/team/10.jpg",
     },
     socialList: [
       {
@@ -320,8 +320,8 @@ module.exports = [
   {
     id: { en: "7", ar: "7" },
     img: {
-      en: "/findHouseReal/assets/images/team/5.jpg",
-      ar: "/findHouseReal/assets/images/team/5.jpg",
+      en: "/assets/images/team/5.jpg",
+      ar: "/assets/images/team/5.jpg",
     },
     socialList: [
       {

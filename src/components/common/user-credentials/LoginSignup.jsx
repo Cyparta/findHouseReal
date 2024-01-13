@@ -66,7 +66,7 @@ const LoginSignup = () => {
               <div className="login_thumb">
                 <img
                   className="img-fluid w100"
-                  src="/findHouseReal/assets/images/resource/login.jpg"
+                  src="/assets/images/resource/login.jpg"
                   alt="login.jpg"
                 />
               </div>
@@ -177,7 +177,7 @@ const LoginSignup = () => {
               <div className="regstr_thumb">
                 <img
                   className="img-fluid w100"
-                  src="/findHouseReal/assets/images/resource/regstr.jpg"
+                  src="/assets/images/resource/regstr.jpg"
                   alt="regstr.jpg"
                 />
               </div>

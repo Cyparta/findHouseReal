@@ -17,7 +17,7 @@ const Hero = () => {
             </div>
             <div className="thumb">
               <img
-                src="/findHouseReal/assets/images/resource/mouse.png"
+                src="/assets/images/resource/mouse.png"
                 alt="mouse.png"
               />
             </div>

@@ -27,7 +27,7 @@ const MobileMenuContent = () => {
             <a className="sidebar-header-inner">
               <img
                 className="nav_logo_img img-fluid "
-                src="/findHouseReal/assets/images/logo/logo.png"
+                src="/assets/images/logo/logo.png"
                 alt="header-logo.png"
               />
             </a>

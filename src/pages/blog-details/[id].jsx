@@ -87,7 +87,7 @@ const BlogDetailsDynamic = () => {
                         <li className="list-inline-item">
                           <a href="#">
                             <img
-                              src="/findHouseReal/assets/images/property/pposter1.png"
+                              src="/assets/images/property/pposter1.png"
                               alt="pposter1.png"
                             />
                           </a>

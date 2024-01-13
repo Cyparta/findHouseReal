@@ -2,8 +2,8 @@ module.exports.blogs = [
   {
     id: { en: "1", ar: "1" },
     img: {
-      en: "/findHouseReal/assets/images/home/450_1.png",
-      ar: "/findHouseReal/assets/images/home/450_1.png",
+      en: "/assets/images/home/450_1.png",
+      ar: "/assets/images/home/450_1.png",
     },
     postMeta: { en: "Contracting", ar: "المقاولات" },
     title: {
@@ -11,8 +11,8 @@ module.exports.blogs = [
       ar: ` المقاولات`,
     },
     posterAvatar: {
-      en: "/findHouseReal/assets/images/property/pposter1.png",
-      ar: "/findHouseReal/assets/images/property/pposter1.png",
+      en: "/assets/images/property/pposter1.png",
+      ar: "/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },
@@ -75,8 +75,8 @@ module.exports.blogs = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouseReal/assets/images/home/450_2.png",
-      ar: "/findHouseReal/assets/images/home/450_2.png",
+      en: "/assets/images/home/450_2.png",
+      ar: "/assets/images/home/450_2.png",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {
@@ -84,8 +84,8 @@ module.exports.blogs = [
       ar: `العقارات`,
     },
     posterAvatar: {
-      en: "/findHouseReal/assets/images/property/pposter1.png",
-      ar: "/findHouseReal/assets/images/property/pposter1.png",
+      en: "/assets/images/property/pposter1.png",
+      ar: "/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },
@@ -187,8 +187,8 @@ Complete the deal.
   {
     id: { en: "3", ar: "3" },
     img: {
-      en: "/findHouseReal/assets/images/home/450_3.png",
-      ar: "/findHouseReal/assets/images/home/450_3.png",
+      en: "/assets/images/home/450_3.png",
+      ar: "/assets/images/home/450_3.png",
     },
     postMeta: { en: "business", ar: "عمل" },
     title: {
@@ -196,8 +196,8 @@ Complete the deal.
       ar: `نتميز بديكورات جديده`,
     },
     posterAvatar: {
-      en: "/findHouseReal/assets/images/property/pposter1.png",
-      ar: "/findHouseReal/assets/images/property/pposter1.png",
+      en: "/assets/images/property/pposter1.png",
+      ar: "/assets/images/property/pposter1.png",
     },
     posterName: { en: "Ali Tufan", ar: "علي توفان" },
     postedDate: { en: "7 August 2022", ar: "7 August 2022" },

@@ -4,8 +4,8 @@ module.exports = [
   {
     id: { en: "1", ar: "1" },
     img: {
-      en: "/findHouseReal/assets/images/home/business2.jpg",
-      ar: "/findHouseReal/assets/images/home/business2.jpg",
+      en: "/assets/images/home/business2.jpg",
+      ar: "/assets/images/home/business2.jpg",
     },
     name: { en: "Building Contracting", ar: "مقاولات البناء" },
     number: {
@@ -17,8 +17,8 @@ module.exports = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouseReal/assets/images/home/realtobuy.jpeg",
-      ar: "/findHouseReal/assets/images/home/realtobuy.jpeg",
+      en: "/assets/images/home/realtobuy.jpeg",
+      ar: "/assets/images/home/realtobuy.jpeg",
     },
     name: { en: "Real estate for rent", ar: "عقارات للايجار" },
     number: {
@@ -31,8 +31,8 @@ module.exports = [
   {
     id: { en: "3", ar: "3" },
     img: {
-      en: "/findHouseReal/assets/images/home/decorations.jpg",
-      ar: "/findHouseReal/assets/images/home/decorations.jpg",
+      en: "/assets/images/home/decorations.jpg",
+      ar: "/assets/images/home/decorations.jpg",
     },
     name: { en: "Home decorations", ar: "ديكورات منازل" },
     number: {
@@ -45,8 +45,8 @@ module.exports = [
   {
     id: { en: "4", ar: "4" },
     img: {
-      en: "/findHouseReal/assets/images/home/whitehome.jpg",
-      ar: "/findHouseReal/assets/images/home/whitehome.jpg",
+      en: "/assets/images/home/whitehome.jpg",
+      ar: "/assets/images/home/whitehome.jpg",
     },
     name: { en: "services", ar: "خدمات" },
     number: {

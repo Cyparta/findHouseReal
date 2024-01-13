@@ -1,20 +1,20 @@
 module.exports.why = [
-  { id: 1, img: "/findHouseReal/assets/images/property/fp1.jpg" },
-  { id: 2, img: "/findHouseReal/assets/images/property/fp2.jpg" },
-  { id: 3, img: "/findHouseReal/assets/images/property/fp3.jpg" },
-  { id: 4, img: "/findHouseReal/assets/images/property/fp4.jpg" },
-  { id: 5, img: "/findHouseReal/assets/images/property/fp5.jpg" },
-  { id: 6, img: "/findHouseReal/assets/images/property/fp6.jpg" },
-  { id: 7, img: "/findHouseReal/assets/images/property/fp7.jpg" },
-  { id: 8, img: "/findHouseReal/assets/images/property/fp8.jpg" },
-  { id: 9, img: "/findHouseReal/assets/images/property/fp9.jpg" },
+  { id: 1, img: "/assets/images/property/fp1.jpg" },
+  { id: 2, img: "/assets/images/property/fp2.jpg" },
+  { id: 3, img: "/assets/images/property/fp3.jpg" },
+  { id: 4, img: "/assets/images/property/fp4.jpg" },
+  { id: 5, img: "/assets/images/property/fp5.jpg" },
+  { id: 6, img: "/assets/images/property/fp6.jpg" },
+  { id: 7, img: "/assets/images/property/fp7.jpg" },
+  { id: 8, img: "/assets/images/property/fp8.jpg" },
+  { id: 9, img: "/assets/images/property/fp9.jpg" },
 ];
 module.exports.gallerys = [
   {
     id: { en: 1, ar: 1 },
     img: {
-      en: "/findHouseReal/assets/images/home/realtobuy.jpeg",
-      ar: "/findHouseReal/assets/images/home/realtobuy.jpeg",
+      en: "/assets/images/home/realtobuy.jpeg",
+      ar: "/assets/images/home/realtobuy.jpeg",
     },
     title: {
       en: "Complementary Home Home - Northern Expansions Unit on the first floor",
@@ -79,8 +79,8 @@ module.exports.gallerys = [
   {
     id: { en: 2, ar: 2 },
     img: {
-      en: "/findHouseReal/assets/images/home/realimage.jpeg",
-      ar: "/findHouseReal/assets/images/home/realimage.jpeg",
+      en: "/assets/images/home/realimage.jpeg",
+      ar: "/assets/images/home/realimage.jpeg",
     },
     title: {
       en: "Complementary Homeland - Northern Expansions, Ground Unit, Genena",
@@ -145,8 +145,8 @@ module.exports.gallerys = [
   {
     id: { en: 3, ar: 3 },
     img: {
-      en: "/findHouseReal/assets/images/home/realimage.jpeg",
-      ar: "/findHouseReal/assets/images/home/realimage.jpeg",
+      en: "/assets/images/home/realimage.jpeg",
+      ar: "/assets/images/home/realimage.jpeg",
     },
     title: {
       en: "Complementary Homeland - Northern Expansions, Ground Unit, Genena",
@@ -211,8 +211,8 @@ module.exports.gallerys = [
   {
     id: { en: 4, ar: 4 },
     img: {
-      en: "/findHouseReal/assets/images/home/realimage.jpeg",
-      ar: "/findHouseReal/assets/images/home/realimage.jpeg",
+      en: "/assets/images/home/realimage.jpeg",
+      ar: "/assets/images/home/realimage.jpeg",
     },
     title: {
       en: "Complementary Homeland - Northern Expansions, Ground Unit, Genena",
