@@ -57,8 +57,8 @@ module.exports.buildinghome = [
   {
     id: { en: "2", ar: "2" },
     img: {
-      en: "/findHouseReal/assets/images/home/business12.jpg",
-      ar: "/findHouseReal/assets/images/home/business12.jpg",
+      en: "assets/images/home/business12.jpg",
+      ar: "assets/images/home/business12.jpg",
     },
     price: { en: "13000", ar: "13000" },
     type: { en: "Construction", ar: "مقاولات" },
