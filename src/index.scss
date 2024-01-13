@@ -379,28 +379,36 @@ header.header-nav.menu_style_home_eight
 
 .ar .feat_property .thumb .thmb_cntnt a.fp_price {
   left: auto;
-  right: 20px
+  right: 20px;
 }
 
 .list-button {
   background-color: var(--color-primary);
   -o-box-shadow: 0px 1px 4px 0px var(--color-primary);
   box-shadow: 0px 1px 4px 0px var(--color-primary);
-  border:none;
-  padding:5px 15px;
+  border: none;
+  padding: 5px 15px;
   border-radius: 15px;
 }
 
-
-.page-item.active .page-link{
+.page-item.active .page-link {
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
   box-shadow: 0px 1px 4px 0px var(--color-primary);
-  color: #fff
+  color: #fff;
 }
 
 .page-item .page-link {
   color: #000;
 }
 
+.list-dropdown button {
+  border: none;
+}
 
+header.header-nav.menu_style_home_one.stricky-fixed
+  .ace-responsive-menu
+  li.add_listing
+  a {
+  color: var(--color-primary);
+}

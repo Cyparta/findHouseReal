@@ -82,8 +82,8 @@ const Footer = () => {
           <ul className="mb30">
             <Social />
           </ul>
-          <h4>{followUs.subscribe[lang]}</h4>
-          <SubscribeForm />
+          {/* <h4>{followUs.subscribe[lang]}</h4> */}
+          {/* <SubscribeForm /> */}
         </div>
       </div>
     </>

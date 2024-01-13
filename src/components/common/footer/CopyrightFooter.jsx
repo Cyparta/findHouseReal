@@ -36,7 +36,7 @@ const CopyrightFooter = () => {
 
           <a href="https://cyparta.com/" target="_blank">
 
-          <Image src={copywrite} alt="" />
+            <Image src={copywrite} alt="" />
           </a>
           <p className="m-0">
             &copy; {new Date().getFullYear()}{" "}
