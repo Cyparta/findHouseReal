@@ -18,7 +18,7 @@ const AddressSidebar = () => {
       </div>
       <div className="content_list">
         <h5>{contactUs.phone[lang]}</h5>
-        <p>{contactUs.phoneText[lang]}</p>
+        <a href="tel:+01050403363">{contactUs.phoneText[lang]}</a> 
       </div>
       <div className="content_list">
         <h5>{contactUs.mail[lang]}</h5>

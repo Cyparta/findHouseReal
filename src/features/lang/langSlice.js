@@ -946,8 +946,8 @@ const initialState = {
           ar: "هاتف",
         },
         phoneText: {
-          en: "01050403363/01050403364",
-          ar: "01050403363/",
+          en: "01050403363",
+          ar: "01050403363",
         },
         skype: {
           en: "skype",
@@ -1282,6 +1282,10 @@ const initialState = {
       keyword: {
         en: "keyword",
         ar: "كلمة رئيسية",
+      },
+      masaha: {
+        en: "The space",
+        ar: "المساحه",
       },
       location: {
         en: "location",

@@ -8,6 +8,8 @@ import PopupSignInUp from "../common/PopupSignInUp";
 import AddressSidebar from "./AddressSidebar";
 import BreadCrumbBanner from "./BreadCrumbBanner";
 import Form from "./Form";
+// import MapContact from "./mapcontact";
+// import MapContact from "./mapcontact";
 
 const index = () => {
   const lang = useSelector((state) => state.lang.value.lang);
@@ -50,31 +52,41 @@ const index = () => {
           </div>
           {/* End .container */}
 
-          <div className="container-fluid p0 mt50">
+          {/* <div className="container-fluid p0 mt50">
             <div className="row">
               <div className="col-lg-12">
                 <div className="h600" id="map-canvas">
-                  <div className="gmap_canvas pe-none">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.0834309933534!2d30.946411599999998!3d29.977032199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145856fa27605d37%3A0x766a95dd7569ad65!2z2KzYp9mF2LnYqSDZpiDYo9mD2KrZiNio2LE!5e0!3m2!1sar!2seg!4v1686656997638!5m2!1sar!2seg"
-                      width="600"
-                      height="450"
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                    {/* End iframe */}
+                  <div className="gmap_canvas pe-none"> */}
+          {/* End iframe */}
 
-                    {/* <img
+          {/* <img
                       className="location-finder"
                       src="assets/images/location.png"
                       alt="location"
                     />  */}
-                  </div>
+          {/* </div>
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+        </section>
+
+        {/* <MapContact /> */}
+
+        <section
+          style={{
+            maxWidth: "100%",
+            height: "600px",
+          }}
+        >
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221066.2962106843!2d30.926643785867697!3d30.032242092841262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458571dc1c1005f%3A0x7d1a5dd6c8358d37!2sWest%20Somid%2C%20First%206th%20of%20October%2C%20Giza%20Governorate%203235141!5e0!3m2!1sen!2seg!4v1708778677223!5m2!1sen!2seg"
+            width="600"
+            height="450"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
 
         {/* <!-- Start Call to Action --> */}

@@ -12,6 +12,8 @@ const initialState = {
     bath_count: "",
     ordering: "",
     search: "",
+    // ----------- remove it 
+    masaha: "",
   },
 };
 
@@ -25,6 +27,12 @@ export const GETUnits = createAsyncThunk("GETUnits", async (data, ThunkApi) => {
 
   if (filter.search !== "") {
     params.search = filter.search;
+  }
+
+    // ----------- remove it 
+  if (filter.area_size !== "") {
+    // ----------- remove it 
+    params.area_size = filter.area_size;
   }
 
   if (filter.room_number !== "") {

@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
+
 // import PopupVideo from "../common/PopupVideo";
-import YouTube from "react-youtube";
+
 const OurMission = () => {
   const lang = useSelector((state) => state.lang.value.lang);
   const about = useSelector((state) => state.lang.value.aboutPage);
@@ -51,7 +52,15 @@ const OurMission = () => {
         </div>
       </div>
       <div className="col-lg-6 col-xl-6">
-      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.873583344881!2d30.955096976199766!3d29.98306287147528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458571dc85dffcd%3A0xf97e089a5d2fb008!2sFirst%206th%20of%20October%2C%20Giza%20Governorate%203235141!5e0!3m2!1sen!2seg!4v1708529323042!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
+        {/* <APIProvider >
+          <Map
+            defaultCenter={{ lat: 22.54992, lng: 0 }}
+            defaultZoom={3}
+            gestureHandling={"greedy"}
+            disableDefaultUI={true}
+          />
+        </APIProvider> */}
+        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.873583344881!2d30.955096976199766!3d29.98306287147528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458571dc85dffcd%3A0xf97e089a5d2fb008!2sFirst%206th%20of%20October%2C%20Giza%20Governorate%203235141!5e0!3m2!1sen!2seg!4v1708529323042!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
       </div>
       {/* End .col */}
     </>

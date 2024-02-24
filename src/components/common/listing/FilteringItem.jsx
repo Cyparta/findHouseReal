@@ -80,6 +80,18 @@ const FilteringItem = () => {
             type="text"
             className="form-control"
             placeholder={main.keyword[lang]}
+            value={filter.masaha}
+            onChange={(e) => dispatch(updateFilter({name:'masaha', val: e.target.value}))}
+          />
+          <label>
+            <span className="flaticon-magnifying-glass"></span>
+          </label>
+        </div>
+        <div className="form-group mb-3">
+          <input
+            type="text"
+            className="form-control"
+            placeholder={main.masaha[lang]}
             value={filter.search}
             onChange={(e) => dispatch(updateFilter({name:'search', val: e.target.value}))}
           />
