@@ -39,7 +39,7 @@ const Index = () => {
         {/* <!-- Modal --> */}
         <PopupSignInUp />
 
-        {/* <!-- Home Design --> */}
+        {/* <!-- Home Design ---> */}
         <Hero />
 
         {/* <!-- Feature Properties --> */}
