@@ -62,6 +62,7 @@ const Index = () => {
         </section>
 
         {/* <!-- Property Cities --> */}
+        
         <section id="property-city" className="property-city pb30">
           <div className="container">
             <div className="row">

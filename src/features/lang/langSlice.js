@@ -12,8 +12,8 @@ const initialState = {
         ar: "الصفحة الرئيسية",
       },
       galleryreal: {
-        en: "Real Estate",
-        ar: "العقارات",
+        en: "Previous works",
+        ar: "سابقة الاعمال ",
       },
       gallerydecoration: {
         en: "Decoration",
@@ -947,7 +947,7 @@ const initialState = {
         },
         phoneText: {
           en: "01050403363/01050403364",
-          ar: "01050403363/01050403364",
+          ar: "01050403363/",
         },
         skype: {
           en: "skype",

@@ -5191,7 +5191,7 @@ form.home5_advanced_search_form
 }
 
 .home1_bgi1 {
-  background-image: url(../images/background/1.jpg);
+  background-image: url(../images/background/home.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
@@ -5201,7 +5201,9 @@ form.home5_advanced_search_form
 .home1-overlay {
   position: relative;
 }
-
+.cursor{
+  cursor: pointer;
+}
 .home1-overlay:before {
   content: "";
   background-color: rgb(29, 41, 62);

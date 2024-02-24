@@ -58,14 +58,7 @@ const OurMission = () => {
         </div>
       </div>
       <div className="col-lg-6 col-xl-6">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/kIC4-24qUno?controls=0&autoplay=1&mute=1&loop=1&playlist=kIC4-24qUno"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.873583344881!2d30.955096976199766!3d29.98306287147528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458571dc85dffcd%3A0xf97e089a5d2fb008!2sFirst%206th%20of%20October%2C%20Giza%20Governorate%203235141!5e0!3m2!1sen!2seg!4v1708529323042!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       {/* End .col */}
     </>

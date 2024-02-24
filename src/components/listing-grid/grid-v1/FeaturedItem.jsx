@@ -103,7 +103,8 @@ const FeaturedItem = () => {
                     isGridOrList ? "d-flex align-items-center" : undefined
                   }`}
                 >
-                  <div className="thumb">
+                    <Link href={`/units-details/${item?.id}`} as={`/units-details/${item?.id}`}>
+                  <div className="thumb cursor">
                     <img
                       className="img-whp"
                       src={item?.main_image}
@@ -133,25 +134,28 @@ const FeaturedItem = () => {
                         </li>
                       </ul> */}
 
-                      <Link href={`/units-details/${item?.id}`} as={`/units-details/${item?.id}`}>
                         <a className="fp_price">
                           {item?.price} {" "}
                           {price_units[lang]}
                         </a>
-                      </Link>
                     </div>
                   </div>
+                      </Link>
                   <div className="details">
                     <div className="tc_content">
                       {/* <p className="text-thm">{item.type[lang]}</p> */}
                       <h4>
-                         <Link href={`/listing-details-v1/`} as={`/listing-details-v1/${item?.id}`}>
+                         <Link href={`/units-details/${item?.id}`} as={`/units-details/${item?.id}`}>
                           <a>{item?.city}</a>
                         </Link>
                       </h4>
                       <p>
                         <span className="flaticon-placeholder"></span>
                         {item?.address}
+                      </p>
+                      <p>
+                       
+                        {item?.sales_type}
                       </p>
 
                       <div className="details">
