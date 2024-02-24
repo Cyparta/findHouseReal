@@ -67,29 +67,6 @@ const index = () => {
           </div>
         </section>
 
-        {/* <!-- Our Team --> */}
-        {/* <section className="our-team bgc-f7">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-6 offset-lg-3">
-                <div className="main-title text-center">
-                  <h2>{ourTeam.heading[lang]}</h2>
-                  <p>{ourTeam.text[lang]}</p>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-12">
-                <div className="team_slider gutter-x15">
-                  <Team />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
-        {/* <!-- Our Testimonials --> */}
-
         {/* <!-- Our Partners --> */}
         <section id="our-partners" className="our-partners">
           <div className="container">
