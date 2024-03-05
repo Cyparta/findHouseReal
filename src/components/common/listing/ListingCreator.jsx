@@ -17,8 +17,8 @@ const Creaator = () => {
       />
       <div className="media-body">
         <h5 className="mt-0 mb0">Samul Williams</h5>
-        <p className="mb0">(123)456-7890</p>
-        <p className="mb0">info@findhouse.com</p>
+        <a className="mb0" href="tel:(123)456-7890">(123)456-7890</a>
+        <a className="mb0" href="mailto:info@findhouse.com">info@findhouse.com</a>
         <a className="text-thm" href="#">
           {translation.viewmylisting[lang]}
         </a>

@@ -22,11 +22,11 @@ const AddressSidebar = () => {
       </div>
       <div className="content_list">
         <h5>{contactUs.mail[lang]}</h5>
-        <p>{contactUs.mailText[lang]}</p>
+        <a href="mailto:info@findhouse.com">{contactUs.mailText[lang]}</a>
       </div>
       <div className="content_list">
         <h5>{contactUs.skype[lang]}</h5>
-        <p>{contactUs.skypeText[lang]}</p>
+        <a href="mailto:skypeText">{contactUs.skypeText[lang]}</a>
       </div>
       <h5>{contactUs.followUs[lang]}</h5>
       <ul className="contact_form_social_area">

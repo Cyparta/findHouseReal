@@ -917,13 +917,10 @@ const initialState = {
           ar: "اتصل بنا",
         },
         text: {
-          en: `We are happy to support and assist you at any time all you have to do is contact us at the following.
-          https://www.facebook.com/profile.php?id=100089948943833
-           info@dar-farha.com`,
-          ar: `يسعدنا دعمك ومساعدتك في أي وقت ، كل ما عليك فعله هو الاتصال بنا على التالي.https://www.facebook.com/profile.php?id=100089948943833
-          
-          
-          info@dar-farha.com`,
+          en: "We are happy to support and assist you at any time all you have to do is contact us at the following",
+         
+      
+          ar: `يسعدنا دعمك ومساعدتك في أي وقت ، كل ما عليك فعله هو الاتصال بنا على التالي`,
         },
         address: {
           en: "Address",

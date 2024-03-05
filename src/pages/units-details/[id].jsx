@@ -65,8 +65,11 @@ const UnitsDetails = () => {
 
                 <section className='mt85'>
                     <div className="container">
-                        <div className="row">
-                            <div className="col-md-6">
+                        <div className="row align-items-between">
+                            <div className="col-md-6 ">
+                                <img src={data?.main_image} className=' imagesize' alt={data?.address} style={{ borderRadius: '18px' }} />
+                            </div>
+                            <div className="col-md-6  boxdetails">
                                 <p className={styles.lead_heading}>
                                     {data?.address}
                                 </p>
@@ -85,10 +88,7 @@ const UnitsDetails = () => {
                                 <p className={styles.lead_unit}>{data?.state}</p>
                                 <p className={styles.lead_unit}>السعر : {data?.price}</p>
                                 <p className={styles.lead_unit}>{data?.comment}</p>
-                                <p className={styles.lead_unit}>للتواصل : {data?.phone}</p>
-                            </div>
-                            <div className="col-md-6">
-                                <img src={data?.main_image} alt={data?.address} style={{ borderRadius: '18px' }} />
+                                <a href='tel:{data?.phone}' className={styles.lead_unit}>للتواصل : {data?.phone}</a>
                             </div>
                         </div>
                     </div>
