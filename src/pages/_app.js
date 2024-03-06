@@ -4,6 +4,7 @@ import { store } from "../app/store";
 import ScrollToTop from "../components/common/ScrollTop";
 import Seo from "../components/common/seo";
 import "../index.scss";
+import Iconsocial from "../components/iconsocial/iconsocial";
 
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
@@ -26,6 +27,7 @@ function MyApp({ Component, pageProps }) {
         {/* </div> */}
       </Provider>
         {/* <ErrorBoundary fallback={<Error/>}></ErrorBoundary> */}
+     <Iconsocial/>
       <ScrollToTop />
     </>
   );

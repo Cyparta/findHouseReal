@@ -28,14 +28,16 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <>
+    <div>
+      
       {isVisible && (
         <>
+
           <div className="scrollToHome" onClick={scrollToTop}>
             <i className="flaticon-arrows"></i>
           </div>
         </>
       )}
-    </>
+    </div>
   );
 }

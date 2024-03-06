@@ -62,6 +62,19 @@ const UnitsDetails = () => {
                 <Header />
                 <MobileMenu />
                 <PopupSignInUp />
+                  
+
+                
+
+
+
+
+
+
+
+
+
+
 
                 <section className='mt85'>
                     <div className="container">
