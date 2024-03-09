@@ -2541,6 +2541,11 @@ const initialState = {
           ar: "أظهر المزيد",
         },
       },
+      det2: {
+        heading: {
+          en: " Details",
+          ar: "تفاصيل ",
+        }},
       det: {
         heading: {
           en: "Property Details",

@@ -38,6 +38,9 @@ import { Gallery, Item } from "react-photoswipe-gallery";
 
 const UnitsDetails = () => {
   const lang = useSelector((state) => state.lang.value.lang);
+  const det = useSelector((state) => state.lang.value.listingStyle);
+  console.log(det.det2.heading)
+
   const router = useRouter();
   console.log(router.query.id);
   const [data, setData] = useState([]);
@@ -72,97 +75,122 @@ const UnitsDetails = () => {
 
         <section className="listing-title-area mt85">
           <div className="container">
-            <div className="row mb30">
-              <div className="col-lg-7 col-xl-8">
+            <div className="row">
+              <div className="col-md-8">
                 <div className="single_property_title mt30-767">
                   <p className={styles.lead_heading}>{data?.address}</p>
                   <p className={styles.lead_unit}>{data?.city}</p>
                 </div>
               </div>
-              <div className="col-lg-5 col-xl-4">
-                <div className="single_property_social_share position-static transform-none">
-                  <div className="price float-start fn-400">
-                    <div>
-                      <p className={styles.lead_unit}>
-                        غرف النوم : {data?.kitchen_count}
-                      </p>
-                      <p className={styles.lead_unit}>
-                        مطبخ : {data?.kitchen_count}
-                      </p>
-                      <p className={styles.lead_unit}>{data?.complete_type}</p>
-                      <p className={styles.lead_unit}>{data?.country}</p>
-                      <p className={styles.lead_unit}>{data?.unit_type}</p>
-                      <p className={styles.lead_unit}>{data?.state}</p>
-                      <p className={styles.lead_unit}>السعر : {data?.price}</p>
-                      <p className={styles.lead_unit}>{data?.comment}</p>
-                      <a href="tel:{data?.phone}" className={styles.lead_unit}>
-                        للتواصل : {data?.phone}
+              <div className="col-md-2">
+                <p style={{ fontSize: "25px" }} className={styles.lead_unit}>
+                  {" "}
+                  {data?.price}
+                </p>
+              </div>
+              <div className="col-md-2">
+                <div className="spss style2 mt20 text-end tal-400">
+                  <ul className="mb0">
+                    <li className="list-inline-item">
+                      <a href="#">
+                        <i className="flaticon-transfer-1"></i>
                       </a>
-                    </div>
-                  </div>
-
-                  {/* End activity and social sharing */}
+                    </li>
+                    <li className="list-inline-item">
+                      <a href="#">
+                        <i className="flaticon-heart"></i>
+                      </a>
+                    </li>
+                    <li className="list-inline-item">
+                      <a href="#">
+                        <i className="flaticon-share"></i>
+                      </a>
+                    </li>
+                    <li className="list-inline-item">
+                      <a href="#">
+                        <i className="flaticon-printer"></i>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            ;
+
             <div className="row">
-              <div className="col-sm-7 col-lg-8">
-                <div className="row">
-                  <div className="col-lg-12">
-                    <div className="spls_style_two mb30-520">
+              <div className="col-md-12 ">
+                <div className="spls_style_two mb30-520 ">
+                  <div>
+                    <Gallery>
+                      <Item
+                        original={data?.main_image}
+                        thumbnail={data?.main_image}
+                        width="1024"
+                        height="768"
+                      >
+                        {({ ref, open }) => (
+                          <img
+                            ref={ref}
+                            onClick={open}
+                            src={data?.main_image}
+                            className=" imgwidthslider cursor"
+                          />
+                        )}
+                      </Item>
+                    </Gallery>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="shadow-lg border  mt-5 p-5">
+              <div className="row">
+                <div className="col-md-2">
+                  
+                  <h2>{det.det2.heading[lang]}</h2>
+                </div>
+                <div />
+                <div className="col-md-5">
+                  <p className={styles.lead_unit}>
+                    غرف النوم : {data?.kitchen_count}
+                  </p>
+                </div>
+                <div className="col-md-3">
+                  <p className={styles.lead_unit}>
+                    مطبخ : {data?.kitchen_count}
+                  </p>
+                </div>
+                <div className="col-md-2">
+                  <p className={styles.lead_unit}>{data?.country}</p>
+                </div>
+              </div>
+
+              <div className="row mb30">
+                <div className="col-lg-5 col-xl-4">
+                  <div className="single_property_social_share position-static transform-none">
+                    <div className="price float-start fn-400">
                       <div>
+                        <p className={styles.lead_unit}>
+                          {data?.complete_type}
+                        </p>
 
+                        <p className={styles.lead_unit}>{data?.unit_type}</p>
+                        <p className={styles.lead_unit}>{data?.state}</p>
 
-                        <Gallery>
-                          <Item
-                            original={data?.main_image}
-                            thumbnail={data?.main_image}
-                            width="1024"
-                            height="768"
-                          >
-                            {({ ref, open }) => (
-                              <img
-                                ref={ref}
-                                onClick={open}
-                                src={data?.main_image}
-                              />
-                            )}
-                          </Item>
-                          
-                        </Gallery>
+                        <p className={styles.lead_unit}>{data?.comment}</p>
+                        <a
+                          href="tel:{data?.phone}"
+                          className={styles.lead_unit}
+                        >
+                          للتواصل : {data?.phone}
+                        </a>
                       </div>
                     </div>
+
+                    {/* End activity and social sharing */}
                   </div>
                 </div>
               </div>
-
-              <div className="spss style2 mt20 text-end tal-400">
-                <ul className="mb0">
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="flaticon-transfer-1"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="flaticon-heart"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="flaticon-share"></i>
-                    </a>
-                  </li>
-                  <li className="list-inline-item">
-                    <a href="#">
-                      <i className="flaticon-printer"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
             </div>
-            ;
           </div>
         </section>
 

@@ -21586,3 +21586,10 @@ background black acima*/
 .widthiconsocial{
   width: 25px;
 }
+.cursor{
+  cursor: pointer;
+}
+.imgwidthslider{
+  width: 100%; 
+  height: 700px;
+}
